@@ -1,9 +1,17 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import { RouterLink, RouterView } from 'vue-router'
+import HelloWorld from '@/components/HelloWorld.vue';
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <HelloWorld />
+
+  <nav>
+    <RouterLink to="/home">Home</RouterLink>
+    <RouterLink to="/about">About</RouterLink>
+  </nav> 
+
+    <div>
+      <RouterView />
+    </div>
 </template>
