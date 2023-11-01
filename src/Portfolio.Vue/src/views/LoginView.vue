@@ -26,7 +26,7 @@ import { RouterLink } from 'vue-router'
                     <label>Remember Me?</label>
                 </div>
                 <div>
-                    <RouterLink to="/home" class="border-2 border-coral-red-700 bg-coral-red-50 text-coral-red-700 py-1 px-5 rounded-md hover:bg-coral-red-100 hover:text-coral-red-700 hover:border-coral-red-700">Login</RouterLink>
+                    <RouterLink to="/home" class="border-2 border-caz-red-700 bg-caz-red-50 text-caz-red-700 py-1 px-5 rounded-md hover:bg-caz-red-100 hover:text-caz-red-700 hover:border-caz-red-700">Login</RouterLink>
                 </div>
             </div>
         </div>

@@ -7,19 +7,19 @@ module.exports = {
   theme: {
     extend: {
       
-      colors: 
+      colors: //https://uicolors.app/create
       {
-        'coral-red': {
+        'caz-red': {
           '50': '#fff1f1',
           '100': '#ffe1e1',
           '200': '#ffc7c7',
           '300': '#ffa0a0',
           '400': '#ff4f4f',
-          '500': '#f83b3b',
+          '500': '#f83b3b', // this is Coral Red
           '600': '#e51d1d',
           '700': '#c11414',
           '800': '#a01414',
-          '900': '#841818',
+          '900': '#8b0404', // this is Red Berry
           '950': '#480707',
         },
       
