@@ -3,7 +3,6 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-
 <body>
     <div class="flex justify-center items-center h-screen bg-woodsmoke-950">
         <div class="w-96 p-6 shadow-lg bg-white rounded-md">
@@ -32,9 +31,4 @@ import { RouterLink } from 'vue-router'
         </div>
     </div>
 </body>
-
 </template>
-
-<style scoped>
-
-</style>

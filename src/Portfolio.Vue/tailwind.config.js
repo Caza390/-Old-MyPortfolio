@@ -14,13 +14,13 @@ module.exports = {
           '100': '#ffe1e1',
           '200': '#ffc7c7',
           '300': '#ffa0a0',
-          '400': '#ff4f4f',
+          '400': '#f68989', // this is Geraldine
           '500': '#f83b3b', // this is Coral Red
           '600': '#e51d1d',
           '700': '#c11414',
           '800': '#a01414',
           '900': '#8b0404', // this is Red Berry
-          '950': '#480707',
+          '950': '#540000', // this is Mahogany
         },
       
 
