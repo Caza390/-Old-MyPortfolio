@@ -13,8 +13,8 @@ module.exports = {
           '50': '#fff1f1',
           '100': '#ffe1e1',
           '200': '#ffc7c7',
-          '300': '#ffa0a0',
-          '400': '#f68989', // this is Geraldine
+          '300': '#f68989', // this is Geraldine
+          '400': '#ff4f4f', // this is Coral Red
           '500': '#f83b3b', // this is Coral Red
           '600': '#e51d1d',
           '700': '#c11414',
