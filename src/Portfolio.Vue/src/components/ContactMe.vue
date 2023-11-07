@@ -13,11 +13,11 @@
         <br>
         I often check my email account and made a discord profile for business use.
         <br>
-        Personally I prefer to be contacted by these but if you would like to use phone call that is also okay.
+        Personally I prefer to be contacted by these but if you would like to use phone call/text that is also okay - I do have WhatsApp.
         </p>
         <br>
         <br>
-        <p class="text-caz-red-400 text-3xl font-arial font-bold">
+        <p class="text-pf-red-400 text-3xl font-arial font-bold">
           Email : callum.carterbegbie@gmail.com
           <br>
           Discord : callumcb
