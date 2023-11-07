@@ -24,6 +24,21 @@ const router = createRouter({
           name: 'contactMe',
           component: () => import('../components/ContactMe.vue')
         },
+        {
+          path: '/projects',
+          name: 'projects',
+          component: () => import('../components/Software/Projects.vue')
+        },
+        {
+          path: '/game_dev',
+          name: 'gameDev',
+          component: () => import('../components/Software/GameDev.vue')
+        },
+        {
+          path: '/blender',
+          name: 'blender',
+          component: () => import('../components/Software/Blender.vue')
+        },
       ]
     },
   ]
