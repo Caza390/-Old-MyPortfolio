@@ -9,7 +9,7 @@ module.exports = {
       
       colors: //https://uicolors.app/create
       {
-        'caz-red': {
+        'pf-red': {
           '50': '#fff1f1',
           '100': '#ffe1e1',
           '200': '#ffc7c7',
