@@ -1,10 +1,9 @@
 # MyPortfolio
-This is a portfolio site. It will be created with VUE 3, as that is a web UI framework which I am comfortable working with. I eventually plan to include ASP.NET to enable authentication on the portfolio site and allow for data uploads using my database, rather than just placing content on the site, to enhance performance.
+This is my portfolio site. This site is to show my skills as a programmer. Keeping this site up-to-date with latest information for the jobs that I am applying for.
 
-I'm not entirely sure about the approach I will take, but I have a basic understanding of Vue, and I have some experience with ASP.NET.
+Originally I was going to use ASP.NET and SQL Server. But since I don't have a lot of experience + the fact I need this site to be made much sooner, I will just use Vue as a default, if I need to make an database like system I'll use Vue's build in system. But hopefully by that point I have the confidence and time to use ASP.NET and SQL Server.
+I was also going to impliment the idea of a login system for different situations like music, but felt that would be too much of a challenge for my skill. But perhaps it will be something I could look into for the future.
 
-# Beginning stages.
-I have an idea for the layout based on a previous plan. The issue with that site was that my monitor colour was not set correctly. I will use Adobe Photoshop to help create my layout due to the added benefit of folders, which my preferred tool Paint.NET lack. Additionally, I will create different branches to make my work easier and more effective, especially when reviewing history. I will use various research methods, such as Stack Overflow, Reddit, ChatGPT, etc., to enhance my learning.
-
-# VUE 3
-With Vue 3, I will be working with TypeScript, Router, and Tailwind CSS. There are possibilities that I might include components like Carousel and Pinia. However, I know that I should use Axios when communicating with the API. The components I have experimented with the most in Vue are TypeScript, Tailwind CSS, and Carousel; hence, I am using them.
+# Why VueJs
+I learnt Vue 3 from a BSpoke. Because of this, I feel - at least for the time being, Vue would be a best for me to work on for now.
+There is the idea of trying React due to its popularity, which I do plan to experiment with eventually but for now and comfort for this portfolio, I will be using Vue.

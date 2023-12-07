@@ -5,7 +5,7 @@ import { RouterLink, RouterView, routerViewLocationKey } from 'vue-router'
 <template>
   <Body class="min-h-screen bg-woodsmoke-950">
     <header class="flex justify-between h-max bg-black">
-      <RouterLink to="/home" class="flex justify-start items-center text-8xl text-pf-red-900 font-arial font-bold border-r-4 border-pf-red-950 my-1 ml-7 pr-3"
+      <RouterLink to="/" class="flex justify-start items-center text-8xl text-pf-red-900 font-arial font-bold border-r-4 border-pf-red-950 my-1 ml-7 pr-3"
       >Caz</RouterLink>
 
       <!--  Tabs  -->
@@ -16,6 +16,8 @@ import { RouterLink, RouterView, routerViewLocationKey } from 'vue-router'
         >Game Dev</RouterLink>
         <RouterLink to="/blender" class="text-2xl text-white font-arial border-l border-pf-red-950 font-bold py-1 px-4 hover:border-b-2"
         >Blender</RouterLink>
+        <button class="text-2xl text-white font-arial border-l border-pf-red-950 font-bold py-1 px-4 hover:border-b-2"
+        >CV</button>
       </div>
 
       <div class="flex justify-end items-center my-1 mr-7">

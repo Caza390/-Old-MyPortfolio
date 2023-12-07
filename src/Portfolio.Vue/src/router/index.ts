@@ -1,18 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import LoginView from '../views/LoginView.vue'
+import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'login',
-      component: LoginView
-    },
-    {
-      path: '/home',
       name: 'home',
-      component: () => import('../views/HomeView.vue'),
+      component: HomeView,
       children: [
         {
           path: '',
@@ -27,17 +22,17 @@ const router = createRouter({
         {
           path: '/projects',
           name: 'projects',
-          component: () => import('../components/Software/Projects.vue')
+          component: () => import('../components/Software/Projects/Projects.vue')
         },
         {
           path: '/game_dev',
           name: 'gameDev',
-          component: () => import('../components/Software/GameDev.vue')
+          component: () => import('../components/Software/GameDev/GameDev.vue')
         },
         {
           path: '/blender',
           name: 'blender',
-          component: () => import('../components/Software/Blender.vue')
+          component: () => import('../components/Software/Blender/Blender.vue')
         },
       ]
     },
