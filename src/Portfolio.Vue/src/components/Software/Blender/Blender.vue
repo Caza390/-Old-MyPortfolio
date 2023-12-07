@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { twenty_three } from "@/components/Software/Blender/Files/BlenderFiles"
 
 </script>
 
@@ -17,8 +18,25 @@
       </div>
     </header>
 
-    <main>
+    <aside>
       
+    </aside>
+
+    <main>
+      <div v-for="twentyThree in twenty_three" :key="twentyThree.id.value">
+        <div>
+          <div>
+            <img
+              :src= "twentyThree.image"
+              alt="badge-stand">
+          </div>
+          <div>
+            <h1 class="text-white text-lg">{{ twentyThree.title }}</h1>
+            <h1 class="text-woodsmoke-300 text-sm">{{ twentyThree.date }}</h1>
+            <h1 class="text-white">{{ twentyThree.description }}</h1>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </template>
