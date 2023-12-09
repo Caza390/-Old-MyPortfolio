@@ -42,8 +42,12 @@ onMounted(() => {
         </li>
         <li>
           <button @click="() => scrollToYear(2020)"
-          class="text-white text-3xl font-arial m-5 py-1 w-36 rounded-lg border-y border-t-pf-red-950 border-b-black hover:border-r-4 hover:border-r-pf-red-950 active:bg-pf-red-900 active:bg-opacity-30 active:border active:border-pf-red-950"
+          class="text-white text-3xl font-arial mt-5 mb-10 py-1 w-36 rounded-lg border-y border-t-pf-red-950 border-b-black hover:border-r-4 hover:border-r-pf-red-950 active:bg-pf-red-900 active:bg-opacity-30 active:border active:border-pf-red-950"
           >2020</button>
+        </li>
+        <li>
+          <RouterLink to="/contact_me" class="text-2xl text-pf-red-300 font-arial font-bold bg-pf-red-950 rounded-xl py-2 px-2 hover:bg-pf-red-900"
+          >Contact Me</RouterLink>
         </li>
       </ul>
     </aside>
