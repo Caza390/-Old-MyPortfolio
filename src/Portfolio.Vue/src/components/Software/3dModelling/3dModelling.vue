@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { onMounted } from 'vue';
 import { twenty_three, twenty_twenty } from "@/components/Software/3dModelling/Files/3dModellingFiles"
 
 const scrollToTop = () => {
