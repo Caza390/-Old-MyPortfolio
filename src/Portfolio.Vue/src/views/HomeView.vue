@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView, routerViewLocationKey } from 'vue-router'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
 </script>
 
 <template>
@@ -14,8 +14,8 @@ import { RouterLink, RouterView, routerViewLocationKey } from 'vue-router'
         >Projects</RouterLink>
         <RouterLink to="/game_dev" class="text-2xl text-white font-arial font-bold border-x border-pf-red-950 py-1 px-4 hover:border-b-2"
         >Game Dev</RouterLink>
-        <RouterLink to="/blender" class="text-2xl text-white font-arial border-l border-pf-red-950 font-bold py-1 px-4 hover:border-b-2"
-        >Blender</RouterLink>
+        <RouterLink to="/3d_modelling" class="text-2xl text-white font-arial border-x border-pf-red-950 font-bold py-1 px-4 hover:border-b-2"
+        >Models</RouterLink>
         <button class="text-2xl text-white font-arial border-l border-pf-red-950 font-bold py-1 px-4 hover:border-b-2"
         >CV</button>
       </div>
@@ -24,7 +24,7 @@ import { RouterLink, RouterView, routerViewLocationKey } from 'vue-router'
         <RouterLink to="/contact_me" class="text-2xl text-pf-red-300 font-arial font-bold bg-pf-red-950 rounded-xl py-1 px-2 hover:bg-pf-red-900"
         >Contact Me</RouterLink>
       </div>
-      </header>
+    </header>
 
     <main>
       <RouterView />

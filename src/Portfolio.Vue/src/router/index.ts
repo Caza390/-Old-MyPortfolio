@@ -30,9 +30,9 @@ const router = createRouter({
           component: () => import('../components/Software/GameDev/GameDev.vue')
         },
         {
-          path: '/blender',
-          name: 'blender',
-          component: () => import('../components/Software/Blender/Blender.vue')
+          path: '/3d_modelling',
+          name: '3dModelling',
+          component: () => import('../components/Software/3dModelling/3dModelling.vue')
         },
       ]
     },
