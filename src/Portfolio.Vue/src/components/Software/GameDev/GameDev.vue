@@ -30,24 +30,26 @@ onMounted(() => {
       </ul>
     </aside>
 
-    <header>
-      <div class="flex justify-center my-2">
-        <h2 class="text-pf-red-400 text-6xl font-arial font-bold">Game Development</h2>
-      </div>
-      <div class="flex justify-center items-center">        
-        <p class="text-white text-2xl text-center font-arial opacity-70 w-[65%]"
-        >Welcome to the Game Development page, here you can see all my gaming related projects that I have made using Unreal Engine 4. This site will also link with 
-        <RouterLink to="/3d_modelling" class="text-pf-red-200 text-2xl text-center underline font-arial opacity-70 w-[65%]">Models</RouterLink>.
-        You can also see some work that I have made on my 
-        <a href="https://www.youtube.com/@Caz4" class="text-pf-red-200 text-2xl text-center underline font-arial opacity-70 w-[65%]">YouTube Channel</a>
-        <br>
-        I have also gotten myself involved in a bootcamp program from Game Academy to learn more things about the gaming industry besides from just the development.
-        </p>
-      </div>
-    </header>
+    <div>
+      <header>
+        <div class="flex justify-center my-2">
+          <h2 class="text-pf-red-400 text-6xl font-arial font-bold">Game Development</h2>
+        </div>
+        <div class="flex justify-center items-center">        
+          <p class="text-white text-2xl text-center font-arial opacity-70 w-[65%]"
+          >Welcome to the Game Development page, here you can see all my gaming related projects that I have made using Unreal Engine 4. This site will also link with 
+          <RouterLink to="/3d_modelling" class="text-pf-red-200 text-2xl text-center underline font-arial opacity-70 w-[65%]">Models</RouterLink>.
+          You can also see some work that I have made on my 
+          <a href="https://www.youtube.com/@Caz4" class="text-pf-red-200 text-2xl text-center underline font-arial opacity-70 w-[65%]">YouTube Channel</a>
+          <br>
+          I have also gotten myself involved in a bootcamp program from Game Academy to learn more things about the gaming industry besides from just the development.
+          </p>
+        </div>
+      </header>
 
-    <main>
+      <main>
       
-    </main>
+      </main>
+    </div>
   </body>
 </template>
