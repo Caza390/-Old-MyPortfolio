@@ -1,0 +1,72 @@
+<script setup lang="ts">
+import { onMounted } from 'vue';
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+onMounted(() => {
+  scrollToTop();
+});
+</script>
+
+
+<template>
+  <body class="flex">
+    <aside class="min-h-screen bg-black border-t-2 border-pf-red-950 rounded-r-lg">
+      <ul class="sticky top-1/2 transform -translate-y-1/2 flex flex-col items-center">
+        <li>
+          <button @click="scrollToTop"
+            class="text-white text-3xl font-arial m-5 mb-10 py-1 w-36 rounded-lg border-y border-b-pf-red-950 border-t-black hover:border-r-4 hover:border-r-pf-red-950 active:bg-pf-red-900 active:bg-opacity-30 active:border active:border-pf-red-950">Top</button>
+        </li>
+        <li>
+          <RouterLink to="/projects"
+            class="text-2xl text-pf-red-300 font-arial font-bold bg-pf-red-950 rounded-xl py-2 px-8 hover:bg-pf-red-900">
+            Return</RouterLink>
+        </li>
+      </ul>
+    </aside>
+
+    <div>
+      <header>
+        <div class="flex justify-center my-2">
+          <h2 class="text-pf-red-400 text-6xl font-arial font-bold">Decaf Mechanics</h2>
+        </div>
+        <div class="flex justify-center items-center">
+          <p class="text-white text-2xl text-center font-arial opacity-70 w-[65%]">Decaf Mechanics was a band that I was
+            involved in, I played bass and backing vocals/rap. This was also the first time I did somewhat of a website
+            design on my bootcamp course with QA. A month later the band unforunatly broke up due to a fallout leaving it
+            to be unfinished.</p>
+        </div>
+      </header>
+
+      <main class="mx-10">
+        <h2 class="text-pf-red-300 text-3xl underline font-arial font-bold mt-20">Website</h2>
+        <div>
+          <div class="bg-pf-red-950 bg-opacity-10 p-2 my-5 rounded hover:bg-opacity-30 flex">
+            <div class="m-2 mr-5 flex-shrink-0">
+              <img class="rounded"
+                src="@/components/Software/Projects/Files/Images/2023/DecafMechanics.png"
+                alt="decafMechanics"
+                style="width: 500px; object-fit: cover;">
+            </div>
+            <div class="flex flex-col">
+              <div>
+                <p class="text-white text-lg font-arial mt-2"
+                  >Since I was just testing everything, I didn't really think much about colour schemes for the site besides from following the bands logo colours. I also just put a rough idea to describe the band to send over to the group to give them a demo. The purpose of this site was for us to use when it came to looking for places to play at. It was going to have the merchandise that we had with 
+                  <a href="https://www.mindstormproductions.co.uk/" target="_blank" class="text-orange-500 font-arial hover:text-orange-300 hover:underline"
+                  >Mindstorm Productions
+                  </a>, the videos of our performances, an 'about us' section and links to our social media pages. Something good enough for the band to promote and share.<br><br>Because of the bands fallout, the group split and I decided to put this project to rest.
+                </p>
+              </div>
+              <p class="text-white opacity-70 mt-2">28/01/2023 - 22/02/2023</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</template>
