@@ -24,9 +24,9 @@ const scrollToSkillStats = () => {
 };
 
 const scrollToUndertaking = () => {
-  const skillStatsSection = document.getElementById('undertaking');
-  if (skillStatsSection) {
-    skillStatsSection.scrollIntoView({
+  const undertakingSection = document.getElementById('undertaking');
+  if (undertakingSection) {
+    undertakingSection.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
