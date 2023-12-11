@@ -9,9 +9,9 @@ const scrollToTop = () => {
 };
 
 const scrollToVersonOne = () => {
-  const skillStatsSection = document.getElementById('versonOne');
-  if (skillStatsSection) {
-    skillStatsSection.scrollIntoView({
+  const versonOneSection = document.getElementById('versonOne');
+  if (versonOneSection) {
+    versonOneSection.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
@@ -19,9 +19,9 @@ const scrollToVersonOne = () => {
 };
 
 const scrollToVersonTwo = () => {
-  const skillStatsSection = document.getElementById('versonTwo');
-  if (skillStatsSection) {
-    skillStatsSection.scrollIntoView({
+  const versonTwoSection = document.getElementById('versonTwo');
+  if (versonTwoSection) {
+    versonTwoSection.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
