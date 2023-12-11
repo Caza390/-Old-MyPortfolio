@@ -34,6 +34,22 @@ const router = createRouter({
           name: '3dModelling',
           component: () => import('../components/Software/3dModelling/3dModelling.vue')
         },
+        // /projects/
+        {
+          path: '/projects/main_portfolio',
+          name: 'mainPortfolio',
+          component: () => import('../components/Software/Projects/Sites/Portfolios/MainPortfolio.vue')
+        },
+        {
+          path: '/projects/decaf_mechanics',
+          name: 'decafMechanics',
+          component: () => import('../components/Software/Projects/Sites/Portfolios/DecafMechanics.vue')
+        },
+        {
+          path: '/projects/old_portfolio',
+          name: 'oldPortFolio',
+          component: () => import('../components/Software/Projects/Sites/Portfolios/OldPortfolio.vue')
+        },
       ]
     },
   ]

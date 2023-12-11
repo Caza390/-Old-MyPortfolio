@@ -24,8 +24,8 @@ onMounted(() => {
           >Top</button>
         </li>
         <li>
-          <RouterLink to="/contact_me" class="text-2xl text-pf-red-300 font-arial font-bold bg-pf-red-950 rounded-xl py-2 px-2 hover:bg-pf-red-900"
-          >Contact Me</RouterLink>
+          <RouterLink to="/projects" class="text-2xl text-pf-red-300 font-arial font-bold bg-pf-red-950 rounded-xl py-2 px-8 hover:bg-pf-red-900"
+          >Return</RouterLink>
         </li>
       </ul>
     </aside>
@@ -33,22 +33,17 @@ onMounted(() => {
     <div>
       <header>
         <div class="flex justify-center my-2">
-          <h2 class="text-pf-red-400 text-6xl font-arial font-bold">Game Development</h2>
+          <h2 class="text-pf-red-400 text-6xl font-arial font-bold">Main Portfolio</h2>
         </div>
         <div class="flex justify-center items-center">        
           <p class="text-white text-2xl text-center font-arial opacity-70 w-[65%]"
-          >Welcome to the Game Development page, here you can see all my gaming related projects that I have made using Unreal Engine 4. This site will also link with 
-          <RouterLink to="/3d_modelling" class="text-pf-red-500 text-2xl text-center font-arial opacity-70 w-[65%] hover:text-pf-red-300 hover:underline">Models</RouterLink>.
-          You can also see some work that I have made on my 
-          <a href="https://www.youtube.com/@Caz4" target="_blank" class="text-pf-red-500 text-2xl text-center font-arial opacity-70 w-[65%] hover:text-pf-red-300 hover:underline">YouTube Channel</a>
-          <br>
-          I have also gotten myself involved in a bootcamp program from Game Academy to learn more things about the gaming industry besides from just the development.
+          >This is about the portfolio site, the one that you are currently on. The goal is to keep this one up-to-date. Here you can see the progressive history that I have had when making this portfolio. This resumes from the <RouterLink to="/projects/old_portfolio" class="text-white text-2xl text-center font-arial opacity-70 w-[65%] hover:underline">Old Portfolio</RouterLink> site.
           </p>
         </div>
       </header>
 
-      <main>
-      
+      <main class="my-2 mx-10">
+        <p class="text-white">Edge</p>
       </main>
     </div>
   </body>

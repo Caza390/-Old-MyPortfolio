@@ -12,7 +12,7 @@ const scrollToTop = () => {
 const scrollToYear = (year: number) => {
   const yearElement = document.getElementById(`year-${year}`);
   if (yearElement) {
-    const offset = -100; // Change this if it doesn't line up to the top.
+    const offset = -100;
     window.scrollTo({
       top: yearElement.offsetTop - offset,
       behavior: "smooth",
@@ -65,13 +65,13 @@ onMounted(() => {
       </header>
 
       <main class="mx-10">
-        <h2 id="year-2023" class="text-pf-red-300 text-3xl underline font-arial font-bold mt-10">2023</h2>
+        <h2 id="year-2023" class="text-pf-red-300 text-3xl underline font-arial font-bold mt-20">2023</h2>
         <div v-for="twentyThree in twenty_three" :key="twentyThree.id.value" :id="'year-' + twentyThree.date.getFullYear()">
           <div class="bg-pf-red-950 bg-opacity-10 p-2 my-5 rounded hover:bg-opacity-30 flex">
             <div class="m-2 mr-5 flex-shrink-0">
               <img class="rounded"
                 :src="twentyThree.image"
-                alt="badge-stand"
+                :alt="twentyThree.image"
                 style="width: 350px; object-fit: cover;">
             </div>
             <div class="flex flex-col">
@@ -90,7 +90,7 @@ onMounted(() => {
             <div class="m-2 mr-5 flex-shrink-0">
               <img class="rounded"
                 :src="twentyTwenty.image"
-                alt="badge-stand"
+                :alt="twentyTwenty.image"
                 style="width: 350px; object-fit: cover;">
             </div>
             <div class="flex flex-col">

@@ -19,16 +19,16 @@
         <div class="flex my-5">
           <RouterLink to="/contact_me" class="text-3xl text-pf-red-300 font-arial font-bold bg-pf-red-950 rounded-3xl mr-3 py-4 px-2 hover:bg-pf-red-900"
         >Contact Me</RouterLink>
-          <a href="https://www.instagram.com/caza390/">
+          <a href="https://www.instagram.com/caza390/" target="_blank">
             <img src="./icons/Instagram.png" alt="instagram" class="h-16 mx-3">
           </a>
-          <a href="https://www.linkedin.com/in/callum-carter-begbie-7854bb183/">
+          <a href="https://www.linkedin.com/in/callum-carter-begbie-7854bb183/" target="_blank">
             <img src="./icons/LinkedIn.png" alt="linkedIn" class="h-16 mx-3">
           </a>
-          <a href="https://twitter.com/caza390">
+          <a href="https://twitter.com/caza390" target="_blank">
             <img src="./icons/Twitter.png" alt="twitter" class="h-16 mx-3">
           </a>
-          <a href="https://github.com/Caza390">
+          <a href="https://github.com/Caza390" target="_blank">
             <img src="./icons/GitHub.png" alt="gitHub" class="h-16 ml-3">
           </a>
         </div>
