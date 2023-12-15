@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import pdfPath from '@/assets/Callum_Carter-Begbie_CV.pdf';
+
+const openPdf = () => {
+  window.open(pdfPath, '_blank');
+};
 </script>
 
 <template>
@@ -16,7 +20,7 @@ import { RouterLink, RouterView } from 'vue-router'
         >Game Dev</RouterLink>
         <RouterLink to="/3d_modelling" class="text-2xl text-white font-arial border-x border-pf-red-950 font-bold py-1 px-4 hover:border-b-2"
         >Models</RouterLink>
-        <button class="text-2xl text-white font-arial border-l border-pf-red-950 font-bold py-1 px-4 hover:border-b-2"
+        <button @click="openPdf" class="text-2xl text-white font-arial border-l border-pf-red-950 font-bold py-1 px-4 hover:border-b-2"
         >CV</button>
       </div>
 
