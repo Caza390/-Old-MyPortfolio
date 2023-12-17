@@ -9,7 +9,7 @@
     <div>
       <div class="bg-black rounded-3xl max-w-4xl py-4 px-6">
         <p class="text-white text-3xl font-arial font-bold"
-        >Contact me with ether email, phone or discord. 
+        >Contact me with either email, phone or discord. 
         <br>
         I often check my email account and made a discord profile for business use.
         <br>
