@@ -88,7 +88,7 @@ onMounted(() => {
         </div>
         <div class="flex justify-center items-center">        
           <p class="text-white text-2xl text-center font-arial opacity-70 w-[65%]"
-          >Welcome to all my projects page. This page is to show all the work I have done in my time but couldn't easily categories it. These projects can range from site development to application creation.
+          >Step into my Projects Page! Here, I've gathered a collection of my work that defies easy categorization. From crafting websites to applications, this is the creative mishmash of my journey.
           </p>
         </div>
       </header>
