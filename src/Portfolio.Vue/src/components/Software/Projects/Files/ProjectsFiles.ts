@@ -1,4 +1,8 @@
 import {ref} from 'vue';
+import mySite from '@/components/Software/Projects/Files/Images/MySite.png';
+
+import oldPortfolio from '@/components/Software/Projects/Files/Images/2023/OldPortfolio.png';
+import DecafMechanics from '@/components/Software/Projects/Files/Images/2023/DecafMechanics.png';
 
 /* Template
     {
@@ -18,7 +22,7 @@ export const undertaking = [
         title: "My Portfolio Site",
         description: "This is about the portfolio site, the one that you are currently on. The goal is to keep this one up-to-date.",
         startDate: new Date("2023-10-30"),
-        image: "../src/components/Software/Projects/Files/Images/MySite.png",
+        image: mySite,
         route: '/projects/main_portfolio'
     },
 ]
@@ -30,7 +34,7 @@ export const twenty_three = [
         description: "This is my old portfolio projects that I have worked on, but ether I learnt something new or went to try a whole new method.",
         startDate: new Date("2023-03-11"),
         endDate: new Date("2023-08-27"),
-        image: "../src/components/Software/Projects/Files/Images/2023/OldPortfolio.png",
+        image: oldPortfolio,
         route: '/projects/old_portfolio'
     },
     {
@@ -39,7 +43,7 @@ export const twenty_three = [
         description: "This site was a working in progress that I made for a band that I was in called Decaf Mechanics",
         startDate: new Date("2023-01-28"),
         endDate: new Date("2023-02-22"),
-        image: "../src/components/Software/Projects/Files/Images/2023/DecafMechanics.png",
+        image: DecafMechanics,
         route: '/projects/decaf_mechanics'
     },
 ]
