@@ -85,10 +85,10 @@ onMounted(() => {
             <div class="flex flex-col">
               <div>
                 <p class="text-white text-lg font-arial mt-2"
-                >While I was taking the QA Bootcamp course, they mentioned about building a portfolio site. Since my skills and knowledge was more limited here on site development, I wasn't able to design my site as good as I hoped. Looking back at the site, it reminds me sites people would make un the early 2000's. 
+                >While I was taking the QA Bootcamp course, they mentioned about building a portfolio site. Since my skills and knowledge were more limited here on site development, I wasn't able to design my site as good as I hoped. Looking back at the site, it reminds me sites people would make un the early 2000's. 
                 </p>
                 <p class="text-white text-lg font-arial mt-2"
-                >In this version of the site, I didn't exactly have the knowledge or the know how on site building which explains the poor design choice that I made. Eventually my job picked up with more hours, taking me away from working on this site. This site had many issues to it - firstly I learnt a whole new way on site development, secondly the background colour where the text "HOMEPAGE" wasn't matching right and the text did not match the rest of the tabs at the top. I also had issue with the dropdown menu.
+                >In this version of the site, I didn't exactly have the knowledge or the know how on web development which explains the poor design choice that I made. Eventually my job picked up with more hours, taking me away from working on this site. This site had many issues to it which I later learnt from - firstly I learned a whole new way on site development, secondly the background colour where the text "HOMEPAGE" was not matching right and the text did not match the rest of the tabs at the top. I also had issue with the dropdown menu not fitting correctly.
                 </p>
               </div>
               <p class="text-white opacity-70 mt-2">11/03/2023 - 21/03/2023</p>
@@ -108,7 +108,7 @@ onMounted(() => {
             <div class="flex flex-col">
               <div>
                 <p class="text-white text-lg font-arial mt-2"
-                >When I build this version of my site I learnt about the user interface sites called VueJs and decided to give myself a challenge using this method. You can see where my current version of my portfolio highly takes place. Originally with this page, I was going to make it so when you click on one of the tabs at the top, the options would be at the side. Somewhat like like how this site work. But I also ended up coming into complications which I fixed during my newer version using Router. This version of my site held all my skills from software, music, animation, game development, blender, automotive and many more. I also wanted to try using ASP.NET and SQL but I hit my major roadblock - aka I didn't know what I was doing.
+                >When I build this version of my site I learnt about the user interface called VueJs and decided to give myself a challenge using this method. You can see where my current version of my portfolio highly takes place. Originally with this page, I was going to make it so when you click on one of the tabs at the top, the options would be at the side. Somewhat like like how this current site works. But I also ended up coming into complications which I fixed using Router. This version of my portfolio was going to hold all my skills from software, music, animation, game development, blender, automotive and many more. I also wanted to try using ASP.NET and SQL but I hit my major roadblock - aka I didn't know what I was doing.
                 </p>
               </div>
               <p class="text-white opacity-70 mt-2">19/07/2023 - 27/08/2023</p>

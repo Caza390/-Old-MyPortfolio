@@ -1,5 +1,11 @@
 <script setup lang="ts">
+import { defineComponent, computed } from 'vue';
 
+const emailAddress = 'callum.carterbegbie@gmail.com';
+const emailLink = computed(() => `mailto:${emailAddress}`);
+
+const discordUsername = 'CallumCB';
+const discordProfileLink = `https://discord.com/users/${1160906964176474193}`;
 </script>
 
 
@@ -18,16 +24,18 @@
         <br>
         <br>
         <p class="text-pf-red-400 text-3xl font-arial font-bold">
-          Email : callum.carterbegbie@gmail.com
+          Email : <a :href="emailLink">{{ emailAddress }}</a>
           <br>
-          Discord : callumcb
+          Discord : CallumCB
           <br>
           Number : 07842 608878
+          <br>
+          LinkedIn : <a href="https://www.linkedin.com/in/callum-carter-begbie-7854bb183/" target="_blank">Callum Carter-Begbie</a>
         </p>
         <br>
         <br>
         <p class="text-white text-3xl font-arial font-bold"
-        >I look forward to hear from you!
+        >I look forward to hearing from you!
         </p>
       </div>
     </div>
