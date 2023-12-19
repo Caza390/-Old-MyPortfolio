@@ -59,7 +59,7 @@ onMounted(() => {
         </div>
         <div class="flex justify-center items-center">        
           <p class="text-white text-2xl text-center font-arial opacity-70 w-[65%]"
-          >Welcome to my 3D Modelling page! This is where I have created 3D models for various projects ranging from game development to models for 3D printing. Feel free to browse around my site to see my history of development and progression.
+          >This page displays all the 3D projects that I have worked on for various projects like game development and 3D printing. The perfered software I use is Blender since it is free and widly used by many.
           </p>
         </div>
       </header>

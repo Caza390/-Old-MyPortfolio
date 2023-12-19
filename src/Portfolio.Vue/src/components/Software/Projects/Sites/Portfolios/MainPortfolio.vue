@@ -71,13 +71,13 @@ onMounted(() => {
             <div class="flex flex-col">
               <div>
                 <p class="text-white text-lg font-arial mt-2"
-                >This was the original home page idea... well sort of. The image on the home page would, of course, not be that. But I needed something to be a temporary placement for the time being. The same goes with the text on the page. I needed to give myself a general idea on what I needed, where I needed everything. This does follow the previous concept I had in the old version (version two).
+                >This was the original home page idea... well sort of. The image on the home page would, of course, not be that. But I needed something to be a temporary placement for the time being. The same goes with the text on the page. I needed to give myself a general idea on what I needed and where I needed everything. This does follow the previous concept I had in the old version (version two).
                 </p>
                 <p class="text-white text-lg font-arial mt-2"
-                >The home page was going to be where users would log into the page. Before I removed the login option, I changed the login to have it's own page to make it less complicated and confusing... again that was before I scrapped the idea. the goal of the accounts would link to different hidden options. Although I still plan to do that task in the future, for now I can always fine another alternative method. For now I'm making this site work for the career I am wanting to get into which is software development.
+                >The home page was going to be where users would log into the page. Before I removed the login option, infact I changed the login to have it's own page to make it less complicated and confusing... again that was before I scrapped the idea. the goal of the accounts would link to different hidden options. Although I still plan to do that task in the future, for now I can always fine another alternative method and right now, I'm making this site work for the career I am wanting to get into which is software development.
                 </p>
                 <p class="text-white text-lg font-arial mt-2"
-                >I also took on the challenge to make the "idea" verions of my site in Photoshop. Usually I would use a program called Paint.NET but found that Photoshop was a more effective for such task.
+                >I also took on the challenge to make the "idea" version of my site in Photoshop. Usually I would use a program called Paint.NET but found that Photoshop was a more effective for such a task.
                 </p>
               </div>
             </div>

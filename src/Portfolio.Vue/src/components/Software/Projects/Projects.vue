@@ -97,7 +97,7 @@ onMounted(() => {
         <h2 id="skill-stat" class="text-pf-red-300 text-3xl underline font-arial font-bold mt-20">Skill Stats</h2>
         <div class="grid grid-cols-2">
           <div>
-            <p class="text-white text-xl font-arial">Here you can see a chart that display my skills in coding. From my experience this is what I have dablled with. The chart is labelled as Low, Low-Mid, Medium, Mid-High, and High.</p>
+            <p class="text-white text-xl font-arial">Here you can see a chart that displays my skills in coding. From my current experience in the coding world, these are what I have dabbled with. The chart is labelled as Low, Low-Mid, Medium, Mid-High, and High.</p>
             <div>
               <div class="flex">
                 <p class="text-pf-red-500 text-lg font-arial font-bold opacity-70 mx-2">Low:</p>
@@ -120,7 +120,7 @@ onMounted(() => {
                 <p class="text-white text-lg font-arial opacity-70">Extremely confident, doesn't need any support and can easily navigate everything.</p>
               </div>
             </div>
-            <p class="text-white text-xl font-arial">I wanted to give myself a realistic expectation with plenty of room for improvement. I know where is always space to learn more information.</p>
+            <p class="text-white text-xl font-arial">I wanted to give myself a realistic expectation with plenty of room for improvements. I also believe that there is always room to learn something new.</p>
           </div>
           <img src="./Files/Images/Chart.png" alt="chart" style="width: 600px; object-fit: cover;" class="mx-auto">
         </div>

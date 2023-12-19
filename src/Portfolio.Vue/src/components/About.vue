@@ -11,9 +11,9 @@
           <h2 class="text-white text-6xl font-arial font-bold">Hello, my name is Callum Carter-Begbie. This is my portfolio!</h2>
           <br>
           <p class="text-pf-red-400 text-3xl font-arial">
-            I am someone who is dedicated to achieving their best at all times. There are many projects I like to get my hands involved in ranging from music, computer projects, cars or even real world projects like room lighting.
+          I am someone who is dedicated to achieving thair best at all times. There are many projects I like to get my hands involved in ranging from music, computer projects, cars or even real world projects like 3D printing and room lighting.
           <br><br>
-          I am someone with experience in the automotive industry (paint in particular) but found myself always getting involved in something technological with software or any other computing realted stuff, hence pushing for more of a software career.
+          When working in the automotive industy (paint in particular). I found myself getting involved in something technological with software or any other computing related stuff - hence pushing for a software career
           </p>
         </div>
         <div class="flex my-5">

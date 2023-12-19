@@ -36,10 +36,7 @@ onMounted(() => {
           <h2 class="text-pf-red-400 text-6xl font-arial font-bold">Decaf Mechanics</h2>
         </div>
         <div class="flex justify-center items-center">
-          <p class="text-white text-2xl text-center font-arial opacity-70 w-[65%]">Decaf Mechanics was a band that I was
-            involved in, I played bass and backing vocals/rap. This was also the first time I did somewhat of a website
-            design on my bootcamp course with QA. A month later the band unforunatly broke up due to a fallout leaving it
-            to be unfinished.</p>
+          <p class="text-white text-2xl text-center font-arial opacity-70 w-[65%]">Decaf Mechanics was a band that I was involved in. I played bass and provided backing vocals/rap. This was also the first time I did some website design during my boot camp course with QA. A month later, unfortunately, the band broke up due to a fallout, leaving it unfinished.</p>
         </div>
       </header>
 
@@ -56,10 +53,10 @@ onMounted(() => {
             <div class="flex flex-col">
               <div>
                 <p class="text-white text-lg font-arial mt-2"
-                  >Since I was just testing everything, I didn't really think much about colour schemes for the site besides from following the bands logo colours. I also just put a rough idea to describe the band to send over to the group to give them a demo. The purpose of this site was for us to use when it came to looking for places to play at. It was going to have the merchandise that we had with 
+                  >Since I was just testing everything, I didn't really think much about colour schemes for the site aside from following the bands logo colours.  I also drafted a rough idea to describe the band, which I sent over to the group to provide them with a demo. The purpose of this site was for us to use when looking for places to play. It was intended to showcase merchandise we had with 
                   <a href="https://www.mindstormproductions.co.uk/" target="_blank" class="text-orange-500 font-arial hover:text-orange-300 hover:underline"
                   >Mindstorm Productions
-                  </a>, the videos of our performances, an 'about us' section and links to our social media pages. Something good enough for the band to promote and share.<br><br>Because of the bands fallout, the group split and I decided to put this project to rest.
+                  </a>, videos of our performances, an 'about us' section, and links to our social media pages — something good enough for the band to promote and share.<br><br>Due to the band's fallout, the group split, and I decided to put this project to rest.
                 </p>
               </div>
               <p class="text-white opacity-70 mt-2">28/01/2023 - 22/02/2023</p>
