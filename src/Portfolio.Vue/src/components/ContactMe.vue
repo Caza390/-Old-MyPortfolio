@@ -14,7 +14,7 @@ const discordProfileLink = `https://discord.com/users/${1160906964176474193}`;
   <div class="flex justify-center items-center m-20">
     <div>
       <div class="bg-black rounded-3xl max-w-4xl py-4 px-6">
-        <p class="text-white text-3xl font-arial font-bold"
+        <p class="text-white text-3xl font-helvetica font-bold"
         >Contact me with either email, phone or discord. 
         <br>
         I often check my email account and made a discord profile for business use.
@@ -23,7 +23,7 @@ const discordProfileLink = `https://discord.com/users/${1160906964176474193}`;
         </p>
         <br>
         <br>
-        <p class="text-pf-red-400 text-3xl font-arial font-bold">
+        <p class="text-pf-red-400 text-3xl font-helvetica font-bold">
           Email : <a :href="emailLink">{{ emailAddress }}</a>
           <br>
           Discord : CallumCB
@@ -34,7 +34,7 @@ const discordProfileLink = `https://discord.com/users/${1160906964176474193}`;
         </p>
         <br>
         <br>
-        <p class="text-white text-3xl font-arial font-bold"
+        <p class="text-white text-3xl font-helvetica font-bold"
         >I look forward to hearing from you!
         </p>
       </div>

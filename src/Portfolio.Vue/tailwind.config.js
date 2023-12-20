@@ -43,9 +43,12 @@ module.exports = {
       
       fontFamily: 
       {
-        arial: ["Arial"]
-      }
-      
+        verdana: ['Verdana', 'sans-serif'],
+        helvetica: ['Helvetica', 'sans-serif'],
+        arial: ['Arial', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],

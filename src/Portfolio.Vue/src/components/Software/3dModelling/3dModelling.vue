@@ -32,21 +32,21 @@ onMounted(() => {
       <ul class="sticky top-1/2 transform -translate-y-1/2 flex flex-col items-center">
         <li>
           <button @click="scrollToTop"
-          class="text-white text-3xl font-arial m-5 py-1 w-36 rounded-lg border-y border-b-pf-red-950 border-t-black hover:border-r-4 hover:border-r-pf-red-950 active:bg-pf-red-900 active:bg-opacity-30 active:border active:border-pf-red-950"
+          class="text-white text-3xl font-verdana m-5 py-1 w-36 rounded-lg border-y border-b-pf-red-950 border-t-black hover:border-r-4 hover:border-r-pf-red-950 active:bg-pf-red-900 active:bg-opacity-30 active:border active:border-pf-red-950"
           >Top</button>
         </li>
         <li>
           <button @click="() => scrollToYear(2023)"
-          class="text-white text-3xl font-arial m-5 py-1 w-36 rounded-lg border-y border-pf-red-950 hover:border-r-4 active:bg-pf-red-900 active:bg-opacity-30 active:border active:border-pf-red-950"
+          class="text-white text-2xl font-verdana m-5 py-1 w-36 rounded-lg border-y border-pf-red-950 hover:border-r-4 active:bg-pf-red-900 active:bg-opacity-30 active:border active:border-pf-red-950"
           >2023</button>
         </li>
         <li>
           <button @click="() => scrollToYear(2020)"
-          class="text-white text-3xl font-arial mt-5 mb-10 py-1 w-36 rounded-lg border-y border-t-pf-red-950 border-b-black hover:border-r-4 hover:border-r-pf-red-950 active:bg-pf-red-900 active:bg-opacity-30 active:border active:border-pf-red-950"
+          class="text-white text-2xl font-verdana mt-5 mb-10 py-1 w-36 rounded-lg border-y border-t-pf-red-950 border-b-black hover:border-r-4 hover:border-r-pf-red-950 active:bg-pf-red-900 active:bg-opacity-30 active:border active:border-pf-red-950"
           >2020</button>
         </li>
         <li>
-          <RouterLink to="/contact_me" class="text-2xl text-pf-red-300 font-arial font-bold bg-pf-red-950 rounded-xl py-2 px-2 hover:bg-pf-red-900"
+          <RouterLink to="/contact_me" class="text-2xl text-pf-red-300 font-verdana font-bold bg-pf-red-950 rounded-xl py-2 px-2 hover:bg-pf-red-900"
           >Contact Me</RouterLink>
         </li>
       </ul>
@@ -55,17 +55,17 @@ onMounted(() => {
     <div>
       <header>
         <div class="flex justify-center py-2">
-          <h2 class="text-pf-red-400 text-6xl font-arial font-bold">3D Modelling</h2>
+          <h2 class="text-pf-red-400 text-6xl font-verdana font-bold">3D Modelling</h2>
         </div>
         <div class="flex justify-center items-center">        
-          <p class="text-white text-2xl text-center font-arial opacity-70 w-[65%]"
+          <p class="text-white text-2xl text-center font-helvetica opacity-70 w-[65%]"
           >This page displays all the 3D projects that I have worked on for various projects like game development and 3D printing. The perfered software I use is Blender since it is free and widly used by many.
           </p>
         </div>
       </header>
 
       <main class="mx-10">
-        <h2 id="year-2023" class="text-pf-red-300 text-3xl underline font-arial font-bold mt-20">2023</h2>
+        <h2 id="year-2023" class="text-pf-red-300 text-3xl underline font-verdana font-bold mt-20">2023</h2>
         <div v-for="twentyThree in twenty_three" :key="twentyThree.id.value" :id="'year-' + twentyThree.date.getFullYear()">
           <div class="bg-pf-red-950 bg-opacity-10 p-2 my-5 rounded hover:bg-opacity-30 flex">
             <div class="m-2 mr-5 flex-shrink-0">
@@ -76,15 +76,15 @@ onMounted(() => {
             </div>
             <div class="flex flex-col">
               <div>
-                <h1 class="text-white text-2xl font-arial font-bold mt-2">{{ twentyThree.title }}</h1>
-                <h1 class="text-woodsmoke-300 text-md font-arial">{{ twentyThree.date.toLocaleDateString('en-GB') }}</h1>
+                <h1 class="text-white text-2xl font-helvetica font-bold mt-2">{{ twentyThree.title }}</h1>
+                <h1 class="text-woodsmoke-300 text-md font-helvetica">{{ twentyThree.date.toLocaleDateString('en-GB') }}</h1>
               </div>
-              <h1 class="text-white text-lg font-arial mt-4">{{ twentyThree.description }}</h1>
+              <h1 class="text-white text-lg font-helvetica mt-4">{{ twentyThree.description }}</h1>
             </div>
           </div>
         </div>
 
-        <h2 id="year-2020" class="text-pf-red-300 text-3xl underline font-arial font-bold mt-10">2020</h2>
+        <h2 id="year-2020" class="text-pf-red-300 text-3xl underline font-verdana font-bold mt-10">2020</h2>
         <div v-for="twentyTwenty in twenty_twenty" :key="twentyTwenty.id.value" :id="'year-' + twentyTwenty.date.getFullYear()">
           <div class="bg-pf-red-950 bg-opacity-10 p-2 my-5 rounded hover:bg-opacity-30 flex">
             <div class="m-2 mr-5 flex-shrink-0">
@@ -95,10 +95,10 @@ onMounted(() => {
             </div>
             <div class="flex flex-col">
               <div>
-                <h1 class="text-white text-2xl font-arial font-bold mt-2">{{ twentyTwenty.title }}</h1>
-                <h1 class="text-woodsmoke-300 text-md font-arial">{{ twentyTwenty.date.toLocaleDateString('en-GB') }}</h1>
+                <h1 class="text-white text-2xl font-helvetica font-bold mt-2">{{ twentyTwenty.title }}</h1>
+                <h1 class="text-woodsmoke-300 text-md font-helvetica">{{ twentyTwenty.date.toLocaleDateString('en-GB') }}</h1>
               </div>
-              <h1 class="text-white text-lg font-arial mt-4">{{ twentyTwenty.description }}</h1>
+              <h1 class="text-white text-lg font-helvetica mt-4">{{ twentyTwenty.description }}</h1>
             </div>
           </div>
         </div>
