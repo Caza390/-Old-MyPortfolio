@@ -83,6 +83,26 @@ onMounted(() => {
             </div>
           </div>
         </div>
+
+        <h2 id="site" class="text-pf-red-300 text-3xl underline font-verdana font-bold mt-20">Changes</h2>
+        <div>
+          <h1 class="text-white text-xl font-helvetica mt-2">Here are where all the site changes will be posted - these changes are changes to site layout and updates. I will not be posting projects, models or games since they aren't changes.</h1>
+          <div class="bg-pf-red-950 bg-opacity-10 p-2 my-5 rounded hover:bg-opacity-30 flex">
+            <div class="m-2 mr-5 flex-shrink-0">
+              <img class="rounded"
+                src="@/components/Software/Projects/Files/Images/Portfolio/Caz.png"
+                alt="homePage"
+                style="width: 500px; object-fit: cover;">
+            </div>
+            <div class="flex flex-col">
+              <div>
+                <p class="text-white text-lg font-helvetica mt-2"
+                >Originally I wrote this site to have every text to be written in Arial font. I personally liked Arial for it's simplistic cartoony look and was the first normal font I came across. But after showing my site to some people, one person mentioned that Arial was not a font to go for. Confused I looked into it and from what I gathered, Airal is disliked among developers but loved by graphic designers. I have also learnt that the font has similarites to Helvetica. The differences aren't too noticable for the common user. But I decided to make the changes. The titles and subtitles of this site will now use Verdana and normal text should be Helvetica... But so far on my end, font where Helvetica should be is still Arial. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   </body>
