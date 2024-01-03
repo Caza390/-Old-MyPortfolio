@@ -50,6 +50,12 @@ const router = createRouter({
           name: 'oldPortFolio',
           component: () => import('../components/Software/Projects/Sites/Portfolios/OldPortfolio.vue')
         },
+        // /game_dev/
+        {
+          path: '/game_dev/slender-man',
+          name: 'slenderMan',
+          component: () => import('../components/Software/GameDev/Games/SlenderMan.vue')
+        },
       ]
     },
   ]
