@@ -34,7 +34,7 @@
         </div>
       </div>
       <div>
-        <img src="../assets/me.jpg" alt="me" class="object-contain rounded-3xl h-[655px]">
+        <img src="../assets/Me.png" alt="me" class="object-contain rounded-3xl h-[655px]">
       </div>
     </div>
   </body>
