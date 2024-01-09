@@ -1,18 +1,18 @@
 import {ref} from 'vue';
-import mySite from '@/components/Software/Projects/Files/Images/MySite.png';
+import slenderMan from '@/components/Software/GameDev/Files/Images/SlenderMan/SlenderMan_temp.png';
 
-import oldPortfolio from '@/components/Software/Projects/Files/Images/2023/OldPortfolio.png';
-
-/* Template
+/*
+export const Temp = [
     {
-        id: ref(0),
-        title: "",
-        description: "",
+        id: ref(1),
+        title: "Title",
+        description: "Desk",
         startDate: new Date("2023-03-11"),
         endDate: new Date("2023-08-27"),
-        image: ,
-        route: "/game_dev/"
+        image: imageName,
+        route: '/game_dev/page'
     },
+]
 */
 
 export const undertaking = [
@@ -20,20 +20,8 @@ export const undertaking = [
         id: ref(1),
         title: "SlenderMan",
         description: "This is a first game project. Making something similar to the game known as SlenderMan. Following similar concept.",
-        startDate: new Date("2023-10-30"),
-        image: mySite,
+        startDate: new Date("2024-01-03"),
+        image: slenderMan,
         route: '/game_dev/slender-man'
-    },
-]
-
-export const twenty_three = [
-    {
-        id: ref(1),
-        title: "My Old Portfolio Sites",
-        description: "This is my old portfolio projects that I have worked on, but ether I learnt something new or went to try a whole new method.",
-        startDate: new Date("2023-03-11"),
-        endDate: new Date("2023-08-27"),
-        image: oldPortfolio,
-        route: '/projects/old_portfolio'
     },
 ]
