@@ -2,16 +2,30 @@
 import { ref, watch } from 'vue';
 import pdfPath from '@/assets/Callum_Carter-Begbie_CV.pdf';
 import { useWindowSize } from '@/view';
+import { useRoute, useRouter } from 'vue-router';
 
 const openPdf = () => {
   window.open(pdfPath, '_blank');
 };
 
-const screenSize = useWindowSize(); // Use this to track the screen size
-const isDesktop = ref(screenSize.width.value >= 1024); // Adjust the breakpoint accordingly
+const screenSize = useWindowSize();
+const isDesktop = ref(screenSize.width.value >= 1024);
+
+const selectedTab = ref(localStorage.getItem('selectedTab') || '/');
+const route = useRoute();
+const router = useRouter();
+const navigateToTab = () => {
+  if (selectedTab.value === '/cv') {
+    openPdf();
+  } else {
+    router.push(selectedTab.value);
+    localStorage.setItem('selectedTab', selectedTab.value);
+  }
+};
 
 watch(screenSize, () => {
-  isDesktop.value = screenSize.width.value >= 1024; // Update isDesktop when the screen size changes
+  isDesktop.value = screenSize.width.value >= 1024;
+  selectedTab.value = route.path;
 });
 </script>
 
@@ -45,13 +59,22 @@ watch(screenSize, () => {
     </main>
   </Body>
 
+
   <!-- Phone View -->
   <body v-else class="min-h-screen bg-woodsmoke-950">
     <header class="flex justify-between h-max bg-black">
-      <RouterLink to="/" class="flex justify-start items-center text-4xl text-pf-red-900 font-verdana font-bold border-r-2 border-pf-red-950 my-2 ml-2 pb-1 px-3"
+      <RouterLink to="/" class="flex justify-start items-center text-4xl text-pf-red-900 font-verdana font-bold border-r-2 border-pf-red-950 my-3 ml-4 pb-1 px-3"
       >Caz</RouterLink>
 
-      
+      <div class="flex justify-between items-center">
+        <select v-model="selectedTab" @change="navigateToTab" class="flex justify-end items-center font-verdana text-xl text-pf-red-300 font-bold bg-pf-red-950 rounded-xl mr-7 py-2 px-3 appearance-none">
+          <option value="/">About</option>
+          <option value="/projects">Projects</option>
+          <option value="/game_dev">Game Dev</option>
+          <option value="/3d_modelling">Models</option>
+          <option value="/cv">CV</option>
+        </select>
+      </div>
     </header>
 
     <main>
