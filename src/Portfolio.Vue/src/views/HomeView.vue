@@ -16,6 +16,7 @@ watch(screenSize, () => {
 </script>
 
 <template>
+  <!-- Desktop View -->
   <Body v-if="isDesktop" class="min-h-screen bg-woodsmoke-950">
     <header class="flex justify-between h-max bg-black">
       <RouterLink to="/" class="flex justify-start items-center text-8xl text-pf-red-900 font-verdana font-bold border-r-4 border-pf-red-950 my-2 ml-7 pb-2 px-3"
@@ -44,8 +45,17 @@ watch(screenSize, () => {
     </main>
   </Body>
 
-  <body v-else>
-    <p>HomeView</p>
-    <RouterView />
+  <!-- Phone View -->
+  <body v-else class="min-h-screen bg-woodsmoke-950">
+    <header class="flex justify-between h-max bg-black">
+      <RouterLink to="/" class="flex justify-start items-center text-4xl text-pf-red-900 font-verdana font-bold border-r-2 border-pf-red-950 my-2 ml-2 pb-1 px-3"
+      >Caz</RouterLink>
+
+      
+    </header>
+
+    <main>
+      <RouterView />
+    </main>
   </body>
 </template>
