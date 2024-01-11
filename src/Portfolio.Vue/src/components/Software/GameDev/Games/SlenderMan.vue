@@ -79,8 +79,8 @@ onMounted(() => {
           <div class="bg-pf-red-950 bg-opacity-10 p-2 my-5 rounded hover:bg-opacity-30 flex">
             <div class="m-2 mr-5 flex-shrink-0">
               <img class="rounded"
-                src="@/components/Software/Projects/Files/Images/Portfolio/HomePage.png"
-                alt="homePage"
+                src=""
+                alt=""
                 style="width: 500px; object-fit: cover;">
             </div>
             <div class="flex flex-col">
