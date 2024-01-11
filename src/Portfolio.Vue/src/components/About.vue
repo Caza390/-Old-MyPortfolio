@@ -1,10 +1,18 @@
 <script setup lang="ts">
+import { ref, watch } from 'vue';
+import { useWindowSize } from '@/view';
 
+const screenSize = useWindowSize(); // Use this to track the screen size
+const isDesktop = ref(screenSize.width.value >= 1024); // Adjust the breakpoint accordingly
+
+watch(screenSize, () => {
+  isDesktop.value = screenSize.width.value >= 1024; // Update isDesktop when the screen size changes
+});
 </script>
 
 
 <template>
-  <body>
+  <body v-if="isDesktop">
     <div class="flex justify-center items-center m-16">
       <div class="mx-14">
         <div class="bg-black rounded-3xl max-w-4xl py-6 px-8">
@@ -37,5 +45,9 @@
         <img src="../assets/Me.png" alt="me" class="object-contain rounded-3xl h-[676px]">
       </div>
     </div>
+  </body>
+
+  <body v-else>
+    <p>About</p>
   </body>
 </template>
