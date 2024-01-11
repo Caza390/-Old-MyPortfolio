@@ -48,6 +48,6 @@ watch(screenSize, () => {
   </body>
 
   <body v-else>
-    <p>About</p>
+    <p class="text-white">Working in progress</p>
   </body>
 </template>
