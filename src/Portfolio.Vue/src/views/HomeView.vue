@@ -1,13 +1,22 @@
 <script setup lang="ts">
+import { ref, watch } from 'vue';
 import pdfPath from '@/assets/Callum_Carter-Begbie_CV.pdf';
+import { useWindowSize } from '@/view';
 
 const openPdf = () => {
   window.open(pdfPath, '_blank');
 };
+
+const screenSize = useWindowSize(); // Use this to track the screen size
+const isDesktop = ref(screenSize.width.value >= 1024); // Adjust the breakpoint accordingly
+
+watch(screenSize, () => {
+  isDesktop.value = screenSize.width.value >= 1024; // Update isDesktop when the screen size changes
+});
 </script>
 
 <template>
-  <Body class="min-h-screen bg-woodsmoke-950">
+  <Body v-if="isDesktop" class="min-h-screen bg-woodsmoke-950">
     <header class="flex justify-between h-max bg-black">
       <RouterLink to="/" class="flex justify-start items-center text-8xl text-pf-red-900 font-verdana font-bold border-r-4 border-pf-red-950 my-2 ml-7 pb-2 px-3"
       >Caz</RouterLink>
@@ -34,4 +43,9 @@ const openPdf = () => {
       <RouterView />
     </main>
   </Body>
+
+  <body v-else>
+    <p>HomeView</p>
+    <RouterView />
+  </body>
 </template>
