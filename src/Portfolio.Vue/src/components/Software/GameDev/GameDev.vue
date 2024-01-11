@@ -36,7 +36,7 @@ onMounted(() => {
         </li>
         <li>
           <button @click="scrollToUndertaking"
-          class="text-white text-xl font-verdana m-5 py-1 w-36 rounded-lg border-y border-pf-red-950 hover:border-r-4 active:bg-pf-red-900 active:bg-opacity-30 active:border active:border-pf-red-950"
+          class="text-white text-xl font-verdana m-5 mb-10 py-1 w-36 rounded-lg border-y border-pf-red-950 hover:border-r-4 active:bg-pf-red-900 active:bg-opacity-30 active:border active:border-pf-red-950"
           >Undertaking</button>
         </li>
         <li>
