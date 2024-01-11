@@ -12,7 +12,7 @@ watch(screenSize, () => {
 
 
 <template>
-  <body v-if="isDesktop">
+  <body>
     <div class="flex justify-center items-center m-16">
       <div class="mx-14">
         <div class="bg-black rounded-3xl max-w-4xl py-6 px-8">
@@ -45,9 +45,5 @@ watch(screenSize, () => {
         <img src="../assets/Me.png" alt="me" class="object-contain rounded-3xl h-[676px]">
       </div>
     </div>
-  </body>
-
-  <body v-else>
-    <p class="text-white">Working in progress</p>
   </body>
 </template>
