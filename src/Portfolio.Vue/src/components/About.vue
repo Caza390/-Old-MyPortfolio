@@ -1,5 +1,13 @@
 <script setup lang="ts">
+import { ref, watch } from 'vue';
+import { useWindowSize } from '@/view';
 
+const screenSize = useWindowSize(); // Use this to track the screen size
+const isDesktop = ref(screenSize.width.value >= 1024); // Adjust the breakpoint accordingly
+
+watch(screenSize, () => {
+  isDesktop.value = screenSize.width.value >= 1024; // Update isDesktop when the screen size changes
+});
 </script>
 
 
