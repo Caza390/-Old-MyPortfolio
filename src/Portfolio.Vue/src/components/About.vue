@@ -12,7 +12,8 @@ watch(screenSize, () => {
 
 
 <template>
-  <body>
+  <!-- Desktop View -->
+  <body v-if="isDesktop">
     <div class="flex justify-center items-center m-16">
       <div class="mx-14">
         <div class="bg-black rounded-3xl max-w-4xl py-6 px-8">
@@ -43,6 +44,16 @@ watch(screenSize, () => {
       </div>
       <div class="mx-14">
         <img src="../assets/Me.png" alt="me" class="object-contain rounded-3xl h-[676px]">
+      </div>
+    </div>
+  </body>
+
+
+  <!-- Phone View -->
+  <body>
+    <div class="flex justify-center items-center">
+      <div class="bg-black rounded-3xl max-w-4xl my-4 mx-4 py-6 px-8">
+        <h2 class="text-white">Hello, my name is Callum Carter-Begbie. This is my portfolio!</h2>
       </div>
     </div>
   </body>

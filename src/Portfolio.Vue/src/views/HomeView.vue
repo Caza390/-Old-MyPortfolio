@@ -16,10 +16,15 @@ const route = useRoute();
 const router = useRouter();
 const navigateToTab = () => {
   if (selectedTab.value === '/cv') {
-    openPdf();
+    openPdfPhone();
   } else {
     router.push(selectedTab.value);
     localStorage.setItem('selectedTab', selectedTab.value);
+  }
+};
+const openPdfPhone = () => {
+  if (selectedTab.value === '/cv') {
+    window.location.href = pdfPath;
   }
 };
 
@@ -63,11 +68,11 @@ watch(screenSize, () => {
   <!-- Phone View -->
   <body v-else class="min-h-screen bg-woodsmoke-950">
     <header class="flex justify-between h-max bg-black">
-      <RouterLink to="/" class="flex justify-start items-center text-4xl text-pf-red-900 font-verdana font-bold border-r-2 border-pf-red-950 my-3 ml-4 pb-1 px-3"
+      <RouterLink to="/" class="flex justify-start items-center text-5xl text-pf-red-900 font-verdana font-bold border-r-2 border-pf-red-950 my-3 ml-4 pb-1 px-3"
       >Caz</RouterLink>
 
       <div class="flex justify-between items-center">
-        <select v-model="selectedTab" @change="navigateToTab" class="flex justify-end items-center font-verdana text-xl text-pf-red-300 font-bold bg-pf-red-950 rounded-xl mr-7 py-2 px-3 appearance-none">
+        <select v-model="selectedTab" @change="navigateToTab" class="flex justify-end items-center font-verdana text-xl text-pf-red-300 font-bold bg-pf-red-950 rounded-xl mr-7 py-2 px-3">
           <option value="/">About</option>
           <option value="/projects">Projects</option>
           <option value="/game_dev">Game Dev</option>
