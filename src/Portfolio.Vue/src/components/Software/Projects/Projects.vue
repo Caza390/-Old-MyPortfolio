@@ -3,6 +3,9 @@ import { ref, watch, onMounted, computed } from 'vue';
 import { undertaking, twenty_three } from "@/components/Software/Projects/Files/ProjectsFiles"
 import { useWindowSize } from '@/view';
 
+const screenSize = useWindowSize();
+const isDesktop = ref(screenSize.width.value >= 1024);
+
 const sortedTwentyThree = computed(() => {
   return [...twenty_three].sort((a, b) => b.endDate.getTime() - a.endDate.getTime());
 });
@@ -44,9 +47,6 @@ const scrollToYear = (year: number) => {
     });
   }
 };
-
-const screenSize = useWindowSize();
-const isDesktop = ref(screenSize.width.value >= 1024);
 
 watch(screenSize, () => {
   isDesktop.value = screenSize.width.value >= 1024;

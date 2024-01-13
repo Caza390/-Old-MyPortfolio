@@ -3,6 +3,9 @@ import { ref, watch, onMounted } from 'vue';
 import { undertaking } from "@/components/Software/GameDev/Files/GameFiles"
 import { useWindowSize } from '@/view';
 
+const screenSize = useWindowSize();
+const isDesktop = ref(screenSize.width.value >= 1024);
+
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
@@ -19,9 +22,6 @@ const scrollToUndertaking = () => {
     });
   }
 };
-
-const screenSize = useWindowSize();
-const isDesktop = ref(screenSize.width.value >= 1024);
 
 watch(screenSize, () => {
   isDesktop.value = screenSize.width.value >= 1024;

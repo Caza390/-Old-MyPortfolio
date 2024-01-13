@@ -3,6 +3,9 @@ import { ref, watch, onMounted } from 'vue';
 import { twenty_three, twenty_twenty } from "@/components/Software/3dModelling/Files/3dModellingFiles"
 import { useWindowSize } from '@/view';
 
+const screenSize = useWindowSize();
+const isDesktop = ref(screenSize.width.value >= 1024);
+
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
@@ -20,9 +23,6 @@ const scrollToYear = (year: number) => {
     });
   }
 };
-
-const screenSize = useWindowSize();
-const isDesktop = ref(screenSize.width.value >= 1024);
 
 watch(screenSize, () => {
   isDesktop.value = screenSize.width.value >= 1024;
