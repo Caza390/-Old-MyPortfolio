@@ -96,7 +96,7 @@ onMounted(() => {
           <h2 class="text-pf-red-400 text-6xl font-verdana font-bold">Projects</h2>
         </div>
         <div class="flex justify-center items-center">        
-          <p class="text-white text-2xl text-center font-verdana opacity-70 w-[65%]"
+          <p class="text-white text-2xl text-center font-helvetica opacity-70 w-[65%]"
           >Step into my Projects Page! Here, I've gathered a collection of my work that defies easy categorization. From crafting websites to applications, this is the creative mishmash of my journey.
           </p>
         </div>
@@ -194,7 +194,7 @@ onMounted(() => {
           <h2 class="text-pf-red-400 text-6xl font-verdana font-bold">Projects</h2>
         </div>
         <div class="flex justify-center items-center">        
-          <p class="text-white text-2xl text-center font-verdana opacity-70 m-4"
+          <p class="text-white text-2xl text-center font-helvetica opacity-70 m-4"
           >Step into my Projects Page! Here, I've gathered a collection of my work that defies easy categorization. From crafting websites to applications, this is the creative mishmash of my journey.
           </p>
         </div>
