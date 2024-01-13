@@ -11,49 +11,49 @@ const router = createRouter({
       children: [
         {
           path: '',
-          name: 'about',
+          name: 'About',
           component: () => import('../components/About.vue')
         },
         {
           path: '/contact_me',
-          name: 'contactMe',
+          name: 'Contact Me',
           component: () => import('../components/ContactMe.vue')
         },
         {
           path: '/projects',
-          name: 'projects',
+          name: 'Projects',
           component: () => import('../components/Software/Projects/Projects.vue')
         },
         {
           path: '/game_dev',
-          name: 'gameDev',
+          name: 'Game Dev',
           component: () => import('../components/Software/GameDev/GameDev.vue')
         },
         {
           path: '/3d_modelling',
-          name: '3dModelling',
+          name: '3D Modelling',
           component: () => import('../components/Software/3dModelling/3dModelling.vue')
         },
         // /projects/
         {
           path: '/projects/main_portfolio',
-          name: 'mainPortfolio',
+          name: 'Main Portfolio',
           component: () => import('../components/Software/Projects/Sites/Portfolios/MainPortfolio.vue')
         },
         {
           path: '/projects/decaf_mechanics',
-          name: 'decafMechanics',
+          name: 'Decaf Mechanics',
           component: () => import('../components/Software/Projects/Sites/Portfolios/DecafMechanics.vue')
         },
         {
           path: '/projects/old_portfolio',
-          name: 'oldPortFolio',
+          name: 'Old PortFolio',
           component: () => import('../components/Software/Projects/Sites/Portfolios/OldPortfolio.vue')
         },
         // /game_dev/
         {
           path: '/game_dev/slender-man',
-          name: 'slenderMan',
+          name: 'SlenderMan',
           component: () => import('../components/Software/GameDev/Games/SlenderMan.vue')
         },
       ]
