@@ -50,7 +50,7 @@ watch(screenSize, () => {
 
 
   <!-- Phone View -->
-  <body>
+  <body v-else>
     <div class="flex justify-center items-center">
       <div class="bg-black rounded-3xl max-w-4xl my-4 mx-4 py-6 px-8">
         <h2 class="text-white">Hello, my name is Callum Carter-Begbie. This is my portfolio!</h2>
