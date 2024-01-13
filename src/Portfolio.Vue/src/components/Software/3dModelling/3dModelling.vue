@@ -117,8 +117,9 @@ onMounted(() => {
 
   <!-- Phone View -->
   <body v-else>
-    <div>
-      <p class="text-white text-2xl font-verdana font-bold m-10">Please access site on desktop to see this page</p>
+    <div class="m-10">
+      <h2 class="text-white text-4xl font-verdana font-bold mb-3">3D Modelling:</h2>
+      <p class="text-white text-2xl font-verdana font-bold">Please access site on desktop to see this page</p>
     </div>
   </body>
 </template>
