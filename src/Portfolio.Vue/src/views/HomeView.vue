@@ -27,6 +27,7 @@ const openModal = () => {
 const closeModal = () => {
   modalOpen.value = false
 }
+
 const selectSection = (section: string) => {
   if (section === 'cv') {
     window.open(pdfPath, '_blank');
@@ -88,40 +89,41 @@ onMounted(() => {
       >Caz</RouterLink>
 
     <div class="flex justify-between items-center">
-      <button @click="openModal" class="text-lg text-pf-red-300 font-verdana font-bold bg-pf-red-950 rounded-xl mr-4 py-3 px-4 hover:bg-pf-red-900">{{ buttonText }}</button>
+      <button @click="openModal" class="flex justify-between items-center text-lg text-pf-red-300 font-verdana font-bold bg-pf-red-950 rounded-xl mr-4 py-3 px-4"
+      >{{ buttonText }}<img src="../assets/Phone_View_Menu.png" alt="Phone_View_Menu" class="ml-2 h-6 w-6" /></button>
     </div>
     </header>
 
     <main>
+      <RouterView />
+
       <div v-if="modalOpen" class="modal-overlay fixed inset-0 bg-black opacity-50"></div>
       <div v-if="modalOpen" class="modal absolute bg-black left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-10 border-4 border-pf-red-300 rounded-xl w-2/3">
         <p class="text-white text-xl font-verdana font-bold mt-5 mx-5 border-b-2 inline-block">Select Page:</p>
         <table class="table-auto my-2 mx-5">
-        <tbody>
-          <tr>
-            <td @click="selectSection('')" class="text-center align-middle text-white text-lg font-verdana py-2 px-4 border-b border-red-950">About</td>
-          </tr>
-          <tr>
-            <td @click="selectSection('projects')" class="text-center align-middle text-white text-lg font-verdana py-2 px-4 border-y border-red-950">Projects</td>
-          </tr>
-          <tr>
-            <td @click="selectSection('game_dev')" class="text-center align-middle text-white text-lg font-verdana py-2 px-4 border-y border-red-950">Game Development</td>
-          </tr>
-          <tr>
-            <td @click="selectSection('3d_modelling')" class="text-center align-middle text-white text-lg font-verdana py-2 px-4 border-y border-red-950">3D Models</td>
-          </tr>
-          <tr>
-            <td @click="selectSection('contact_me')" class="text-center align-middle text-white text-lg font-verdana py-2 px-4 border-y border-red-950">Contact Me</td>
-          </tr>
-          <tr>
-            <td @click="selectSection('cv')" class="text-center align-middle text-white text-lg font-verdana py-2 px-4 border-t border-red-950">CV</td>
-          </tr>
-        </tbody>
-      </table>
-      <button @click="closeModal" class="text-lg text-pf-red-300 font-verdana font-bold bg-pf-red-950 rounded-xl mb-5 ml-5 py-3 px-4 hover:bg-pf-red-900">Close</button>
-    </div>
-
-      <RouterView />
+          <tbody>
+            <tr>
+              <td @click="selectSection('')" class="text-center align-middle text-white text-lg font-verdana py-3 px-4 border-b border-red-950">About</td>
+            </tr>
+            <tr>
+              <td @click="selectSection('projects')" class="text-center align-middle text-white text-lg font-verdana py-3 px-4 border-y border-red-950">Projects</td>
+            </tr>
+            <tr>
+              <td @click="selectSection('game_dev')" class="text-center align-middle text-white text-lg font-verdana py-3 px-4 border-y border-red-950">Game Development</td>
+            </tr>
+            <tr>
+              <td @click="selectSection('3d_modelling')" class="text-center align-middle text-white text-lg font-verdana py-3 px-4 border-y border-red-950">3D Models</td>
+            </tr>
+            <tr>
+              <td @click="selectSection('contact_me')" class="text-center align-middle text-white text-lg font-verdana py-3 px-4 border-y border-red-950">Contact Me</td>
+            </tr>
+            <tr>
+              <td @click="selectSection('cv')" class="text-center align-middle text-white text-lg font-verdana py-3 px-4 border-t border-red-950">CV</td>
+            </tr>
+          </tbody>
+        </table>
+        <button @click="closeModal" class="text-lg text-pf-red-300 font-verdana font-bold bg-pf-red-950 rounded-xl mb-5 ml-5 py-3 px-4">Close</button>
+      </div>
     </main>
   </body>
 </template>

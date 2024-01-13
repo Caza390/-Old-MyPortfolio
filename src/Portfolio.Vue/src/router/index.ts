@@ -42,7 +42,7 @@ const router = createRouter({
         },
         {
           path: '/projects/decaf_mechanics',
-          name: 'Decaf Mechanics',
+          name: 'Decaf Mech..',
           component: () => import('../components/Software/Projects/Sites/Portfolios/DecafMechanics.vue')
         },
         {

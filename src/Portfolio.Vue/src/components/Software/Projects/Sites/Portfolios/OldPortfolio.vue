@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
+import { useWindowSize } from '@/view';
+
+const screenSize = useWindowSize();
+const isDesktop = ref(screenSize.width.value >= 1024);
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -35,7 +39,7 @@ onMounted(() => {
 
 
 <template>
-  <body class="flex">
+  <body v-if="isDesktop" class="flex">
     <aside class="min-h-screen bg-black border-t-2 border-pf-red-950 rounded-r-lg">
       <ul class="sticky top-1/2 transform -translate-y-1/2 flex flex-col items-center">
         <li>
@@ -115,6 +119,15 @@ onMounted(() => {
           </div>
         </div>
       </main>
+    </div>
+  </body>
+
+
+  <!-- Phone View -->
+  <body v-else>
+    <div class="m-10">
+      <h2 class="text-white text-4xl font-verdana font-bold mb-3">Old Portfolio:</h2>
+      <p class="text-white text-2xl font-verdana font-bold">Please access site on desktop to see this page</p>
     </div>
   </body>
 </template>
