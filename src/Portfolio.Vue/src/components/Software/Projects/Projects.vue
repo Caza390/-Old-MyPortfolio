@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { onMounted, computed } from 'vue';
+import { ref, watch, onMounted, computed } from 'vue';
 import { undertaking, twenty_three } from "@/components/Software/Projects/Files/ProjectsFiles"
+import { useWindowSize } from '@/view';
 
 const sortedTwentyThree = computed(() => {
   return [...twenty_three].sort((a, b) => b.endDate.getTime() - a.endDate.getTime());
@@ -44,6 +45,13 @@ const scrollToYear = (year: number) => {
   }
 };
 
+const screenSize = useWindowSize();
+const isDesktop = ref(screenSize.width.value >= 1024);
+
+watch(screenSize, () => {
+  isDesktop.value = screenSize.width.value >= 1024;
+});
+
 onMounted(() => {
   scrollToTop();
 });
@@ -51,7 +59,8 @@ onMounted(() => {
 
 
 <template>
-  <body class="flex">
+  <!-- Desktop View -->
+  <body v-if="isDesktop" class="flex">
     <aside class="min-h-screen bg-black border-t-2 border-pf-red-950 rounded-r-lg">
       <ul class="sticky top-1/2 transform -translate-y-1/2 flex flex-col items-center">
         <li>
@@ -173,6 +182,14 @@ onMounted(() => {
           </div>
         </div>
       </main>
+    </div>
+  </body>
+
+
+  <!-- Phone View -->
+  <body v-else>
+    <div>
+      <p class="text-white text-2xl font-verdana font-bold m-10">Please access site on desktop to see this page</p>
     </div>
   </body>
 </template>
