@@ -102,9 +102,48 @@ onMounted(() => {
 
   <!-- Phone View -->
   <body v-else>
-    <div class="m-10">
-      <h2 class="text-white text-4xl font-verdana font-bold mb-3">Game Development:</h2>
-      <p class="text-white text-2xl font-verdana font-bold">Please access site on desktop to see this page</p>
-    </div>
+    <div>
+      <header>
+        <div class="flex justify-center my-2">
+          <h2 class="text-pf-red-400 text-6xl font-verdana font-bold">Game Dev</h2>
+        </div>
+        <div class="flex justify-center items-center">        
+          <p class="text-white text-2xl text-center font-helvetica opacity-70 m-4"
+          >Welcome to the Game Development page, here you can see all my gaming related projects that I have made using Unreal Engine 4. This site will also link with 
+          <RouterLink to="/3d_modelling" class="text-pf-red-500 text-2xl text-center font-helvetica opacity-70 w-[65%] hover:text-pf-red-300 hover:underline">Models</RouterLink>.
+          You can also see some work that I have made on my 
+          <a href="https://www.youtube.com/@Caz4" target="_blank" class="text-pf-red-500 text-2xl text-center font-helvetica opacity-70 w-[65%] hover:text-pf-red-300 hover:underline">YouTube Channel</a>
+          <br>
+          I have also gotten myself involved in a bootcamp program from Game Academy to learn more things about the gaming industry besides from just the development.
+          </p>
+        </div>
+      </header>
+
+      <main class="mx-4">
+        <h2 id="undertaking" class="text-pf-red-300 text-3xl underline font-verdana font-bold mt-10">Undertaking</h2>
+        <div v-for="Undertaking in undertaking" :key="Undertaking.id.value" :id="'year-' + Undertaking.startDate.getFullYear()">
+          <div class="flex flex-col items-center bg-pf-red-950 bg-opacity-10 p-2 my-5 rounded-xl hover:bg-opacity-30">
+            <div class="m-2 mr-5 flex-shrink-0">
+              <img class="rounded"
+                :src="Undertaking.image"
+                :alt="Undertaking.image"
+                style="width: 350px; object-fit: cover;">
+            </div>
+            <div>
+              <div>
+                <h1 class="text-white text-2xl font-helvetica font-bold mt-2 mx-2">{{ Undertaking.title }}</h1>
+                <div>
+                  <h1 class="text-woodsmoke-300 text-md font-helvetica mx-2">{{ Undertaking.startDate.toLocaleDateString('en-GB') }}</h1>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-white text-lg font-helvetica mt-4 mx-2">{{ Undertaking.description }}</h1>
+                <RouterLink :to="Undertaking.route" class="text-white text-lg font-helvetica font-bold mt-4 mx-2 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>>
   </body>
 </template>

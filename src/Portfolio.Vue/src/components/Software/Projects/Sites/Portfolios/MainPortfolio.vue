@@ -114,10 +114,68 @@ onMounted(() => {
 
 
 <!-- Phone View -->
-<body v-else>
-  <div class="m-10">
-    <h2 class="text-white text-4xl font-verdana font-bold mb-3">Main Portfolio:</h2>
-    <p class="text-white text-2xl font-verdana font-bold">Please access site on desktop to see this page</p>
-  </div>
-</body>
+  <body v-else>
+    <div>
+      <header>
+        <div class="flex justify-center my-2">
+          <h2 class="text-pf-red-400 text-6xl text-center font-verdana font-bold">Main Portfolio</h2>
+        </div>
+        <div class="flex justify-center items-center">        
+          <p class="text-white text-2xl text-center font-helvetica opacity-70 m-4"
+          >This is about the portfolio site, the one that you are currently on. The goal is to keep this one up-to-date. Here you can see the progressive history that I have had when making this portfolio. This resumes from the <RouterLink to="/projects/old_portfolio" class="text-pf-red-500 text-2xl text-center font-arial opacity-70 w-[65%] hover:text-pf-red-300 hover:underline">Old Portfolio</RouterLink> site.
+          </p>
+        </div>
+      </header>
+
+      <main class="mx-4">
+        <h2 id="site" class="text-pf-red-300 text-3xl underline font-verdana font-bold mt-10">Current Portfolio</h2>
+        <h1 class="text-white text-xl font-helvetica mt-2">When developing this site I had an entire different idea. Originally I was going to make a login page to keep the site private and controlled to who can see what. The reason for this is because I have a wide skill range, from media with performing arts and music, to automotive with vehicle repairing/painting and software. After realising I over estimated my skill with SQL and ASP.NET, I decided it was best for me to make a simpler version and a site dedicated to the career I want over general skills for my hobbies.</h1>
+        <div class="flex flex-col items-center bg-pf-red-950 bg-opacity-10 p-2 my-5 rounded-xl hover:bg-opacity-30">
+          <div class="m-2 mr-5 flex-shrink-0">
+            <img class="rounded"
+                src="@/components/Software/Projects/Files/Images/Portfolio/HomePage.png"
+                alt="homePage"
+                style="width: 500px; object-fit: cover;">
+          </div>
+          <div>
+            <div>
+              <p class="text-white text-lg font-helvetica mt-2"
+              >This was the original home page idea... well sort of. The image on the home page would, of course, not be that. But I needed something to be a temporary placement for the time being. The same goes with the text on the page. I needed to give myself a general idea on what I needed and where I needed everything. This does follow the previous concept I had in the old version (version two).
+              </p>
+              <p class="text-white text-lg font-helvetica mt-2"
+              >The home page was going to be where users would log into the page. Before I removed the login option, infact I changed the login to have it's own page to make it less complicated and confusing... again that was before I scrapped the idea. the goal of the accounts would link to different hidden options. Although I still plan to do that task in the future, for now I can always fine another alternative method and right now, I'm making this site work for the career I am wanting to get into which is software development.
+              </p>
+              <p class="text-white text-lg font-helvetica mt-2"
+              >I also took on the challenge to make the "idea" version of my site in Photoshop. Usually I would use a program called Paint.NET but found that Photoshop was a more effective for such a task.
+              </p>
+            </div>
+            <div>
+              <h1 class="text-white text-lg font-helvetica mt-4 mx-2"></h1>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="site" class="text-pf-red-300 text-3xl underline font-verdana font-bold mt-10">Changes</h2>
+        <h1 class="text-white text-xl font-helvetica mt-2">Here are where all the site changes will be posted - these changes are changes to site layout and updates. I will not be posting projects, models or games since they aren't changes.</h1>
+        <div class="flex flex-col items-center bg-pf-red-950 bg-opacity-10 p-2 my-5 rounded-xl hover:bg-opacity-30">
+          <div class="m-2 mr-5 flex-shrink-0">
+            <img class="rounded"
+                src="@/components/Software/Projects/Files/Images/Portfolio/Caz.png"
+                alt="homePage"
+                style="width: 500px; object-fit: cover;">
+          </div>
+          <div>
+            <div>
+              <p class="text-white text-lg font-helvetica mt-2"
+                >Originally I wrote this site to have every text to be written in Arial font. I personally liked Arial for it's simplistic cartoony look and was the first normal font I came across. But after showing my site to some people, one person mentioned that Arial was not a font to go for. Confused I looked into it and from what I gathered, Airal is disliked among developers but loved by graphic designers. I have also learnt that the font has similarites to Helvetica. The differences aren't too noticable for the common user. But I decided to make the changes. The titles and subtitles of this site will now use Verdana and normal text should be Helvetica... But so far on my end, font where Helvetica should be is still Arial. 
+                </p>
+            </div>
+            <div>
+              <h1 class="text-white text-lg font-helvetica mt-4 mx-2"></h1>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </template>
