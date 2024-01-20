@@ -282,6 +282,5 @@ onMounted(() => {
       </main>
     </div>
     <br>
-  
   </body>
 </template>
