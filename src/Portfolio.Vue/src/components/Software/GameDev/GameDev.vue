@@ -90,7 +90,11 @@ onMounted(() => {
               </div>
               <div class="flex">
                 <h1 class="text-white text-lg font-helvetica mt-4">{{ Undertaking.description }}</h1>
-                <RouterLink :to="Undertaking.route" class="text-white text-lg font-helvetica font-bold mt-4 ml-1 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+                <!-- <RouterLink :to="Undertaking.route" class="text-white text-lg font-helvetica font-bold mt-4 ml-1 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+              -->
+                <span class="text-gray-500 text-lg font-helvetica font-bold mt-4 mx-2 cursor-not-allowed">
+                Link Disabled
+                </span>
               </div>
             </div>
           </div>
@@ -138,12 +142,17 @@ onMounted(() => {
               </div>
               <div>
                 <h1 class="text-white text-lg font-helvetica mt-4 mx-2">{{ Undertaking.description }}</h1>
-                <RouterLink :to="Undertaking.route" class="text-white text-lg font-helvetica font-bold mt-4 mx-2 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+                <!-- <RouterLink v-if="!Undertaking.disabled" :to="Undertaking.route" class="text-white text-lg font-helvetica font-bold mt-4 mx-2 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+                -->
+                  <span class="text-gray-500 text-lg font-helvetica font-bold mt-4 mx-2 cursor-not-allowed">
+                Link Disabled
+                </span>
               </div>
             </div>
           </div>
         </div>
       </main>
-    </div>>
+    </div>
+    <br>
   </body>
 </template>
