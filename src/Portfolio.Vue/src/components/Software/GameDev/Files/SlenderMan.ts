@@ -2,6 +2,7 @@ import {ref} from 'vue';
 import basicMovement from '@/components/Software/GameDev/Files/Images/SlenderMan/BasicMovement.png';
 import sprint from '@/components/Software/GameDev/Files/Images/SlenderMan/Sprint.png'
 import flashlight from '@/components/Software/GameDev/Files/Images/SlenderMan/Flashlight.png'
+import pages from '@/components/Software/GameDev/Files/Images/SlenderMan/Pages.gif'
 
 /*
     {
@@ -30,5 +31,11 @@ export const playerFiles = [
         title: "Flashlight",
         description: "I have created a flashlight for my project. Since the game relies on the darkness, I needed to make sure the players can see with ease. This is where a great tool known as the flashlight comes in. I also made it so the player can pick up the flashlight, creating a real object to be placed in their hand compared to just shining from the players face. The current problem I am facing with my light is a possible Lumen cause. This wasn't something I had to deal with before and from my current research and asking for help, it just lead me down a problem that doesn't seem to be fixable (for now of course) I used my old UE4 tutorial and some other help by Gorka Games.",
         image: flashlight,
+    },
+    {
+        id: ref(3),
+        title: "Pages",
+        description: "Since the game relies on finding pages to finish the game, I needed to make it so I can interact with the pages, have it tell the player they have collected a page and have the pages count up. The goal from this stage is to make it so eventually the pages will allow you access to a house which will lead to the escape of SlenderMan.",
+        image: pages,
     },
 ]
