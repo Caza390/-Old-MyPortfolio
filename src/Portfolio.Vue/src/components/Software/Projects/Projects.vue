@@ -152,7 +152,9 @@ onMounted(() => {
               </div>
               <div class="flex">
                 <h1 class="text-white text-lg font-helvetica mt-4">{{ Undertaking.description }}</h1>
-                <RouterLink :to="Undertaking.route" class="text-white text-lg font-helvetica font-bold mt-4 ml-1 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+                <div class="flex" v-if="Undertaking.route">
+                  <RouterLink :to="Undertaking.route" class="text-white text-lg font-helvetica font-bold mt-4 ml-1 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+                </div>
               </div>
             </div>
           </div>
@@ -176,7 +178,9 @@ onMounted(() => {
               </div>
               <div class="flex">
                 <h1 class="text-white text-lg font-helvetica mt-4">{{ twentyThree.description }}</h1>
-                <RouterLink :to="twentyThree.route" class="text-white text-lg font-helvetica font-bold mt-4 ml-1 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+                <div class="flex" v-if="twentyThree.route">
+                  <RouterLink :to="twentyThree.route" class="text-white text-lg font-helvetica font-bold mt-4 ml-1 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+                </div>
               </div>
             </div>
           </div>
@@ -250,7 +254,9 @@ onMounted(() => {
               </div>
               <div>
                 <h1 class="text-white text-lg font-helvetica mt-4 mx-2">{{ Undertaking.description }}</h1>
-                <RouterLink :to="Undertaking.route" class="text-white text-lg font-helvetica font-bold mt-4 mx-2 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+                <div class="flex" v-if="Undertaking.route">
+                  <RouterLink :to="Undertaking.route" class="text-white text-lg font-helvetica font-bold mt-4 ml-1 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+                </div>
               </div>
             </div>
           </div>
@@ -274,7 +280,9 @@ onMounted(() => {
               </div>
               <div>
                 <h1 class="text-white text-lg font-helvetica mt-4 mx-2">{{ twentyThree.description }}</h1>
-                <RouterLink :to="twentyThree.route" class="text-white text-lg font-helvetica font-bold mt-4 mx-2 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+                <div class="flex" v-if="twentyThree.route">
+                  <RouterLink :to="twentyThree.route" class="text-white text-lg font-helvetica font-bold mt-4 ml-1 hover:text-pf-red-300 hover:underline">Click Here to find out more.</RouterLink>
+                </div>
               </div>
             </div>
           </div>

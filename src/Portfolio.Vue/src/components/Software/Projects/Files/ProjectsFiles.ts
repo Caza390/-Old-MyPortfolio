@@ -1,6 +1,8 @@
 import {ref} from 'vue';
 import mySite from '@/components/Software/Projects/Files/Images/MySite.png';
 
+import viteAndReact from '@/components/Software/Projects/Files/Images/2024/Vite&React.png';
+
 import oldPortfolio from '@/components/Software/Projects/Files/Images/2023/OldPortfolio.png';
 import DecafMechanics from '@/components/Software/Projects/Files/Images/2023/DecafMechanics.png';
 
@@ -24,6 +26,13 @@ export const undertaking = [
         startDate: new Date("2023-10-30"),
         image: mySite,
         route: '/projects/main_portfolio'
+    },
+    {
+        id: ref(2),
+        title: "ReactJs",
+        description: "I decided to give ReactJs a go due to it's popularity amongst the industry. My first React project will be following the steps from a YouTube video by Programming with Mosh",
+        startDate: new Date("2024-02-19"),
+        image: viteAndReact,
     },
 ]
 
