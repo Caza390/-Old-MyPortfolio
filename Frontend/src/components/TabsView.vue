@@ -1,19 +1,22 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
+import tabsDataList from "@/components/Data/Tabs/Tabs";
+import categoryDataList from "@/components/Data/Categories/Categories";
 
 interface Category {
-  id: number;
+  id: string;
   title: string;
   description: string;
   url: string;
   startDate: string;
   endDate?: string | null;
+  tabs: string;
   imagePath?: string;
 }
 
 interface TabsData {
-  id: number;
+  id: string;
   title: string;
   subtitle: string;
   url: string;
@@ -25,34 +28,36 @@ const categoriesData = ref<Category[]>([]);
 const tabsData = ref<TabsData | null>(null);
 const loading = ref(true);
 const error = ref('');
-const years = ref<number[]>([]); // Array to store unique sorted years
-const backendBaseUrl = "http://192.168.1.90:5176"; // Backend base URL
+const years = ref<number[]>([]);
 
 
-const fetchCategoriesData = async () => {
+const fetchCategoriesData = () => {
   if (!tabsUrl.value) {
-    error.value = 'No valid URL provided.';
+    error.value = "No valid URL provided.";
     return;
   }
 
   try {
-    const response = await fetch(`http://192.168.1.90:5176/api/category/CategoriesByTabs?tabs=${tabsUrl.value}`);
+    // Filter categories by the current tab
+    const filteredCategories = categoryDataList.filter(
+      (category) => category.tabs === tabsUrl.value
+    );
 
-    if (!response.ok) {
-      throw new Error('Failed to fetch categories data');
+    if (filteredCategories.length === 0) {
+      throw new Error("No categories found for the current tab.");
     }
 
-    const data: Category[] = await response.json();
+    // Process and sort categories
+    categoriesData.value = filteredCategories
+      .map((category) => {
+        return {
+          ...category,
+          imagePath: category.image ? `/assets/images/${category.image}` : "",
+        };
+      })
+      .sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
 
-    categoriesData.value = data.map((category: Category) => {
-      if (category.imagePath) {
-        category.imagePath = `${backendBaseUrl}/${category.imagePath.replace(/^\//, '')}`;
-      }
-      return category;
-    }).sort((a, b) => {
-      return new Date(b.startDate).getTime() - new Date(a.startDate).getTime();
-    });
-
+    // Extract unique years from categories
     const uniqueYears = new Set<number>();
     categoriesData.value.forEach((category) => {
       const startYear = new Date(category.startDate).getFullYear();
@@ -65,26 +70,20 @@ const fetchCategoriesData = async () => {
     years.value = Array.from(uniqueYears).sort((a, b) => b - a);
   } catch (err: any) {
     error.value = err.message;
-  } finally {
-    loading.value = false;
   }
 };
 
-
-const fetchTabsData = async () => {
+const fetchTabsData = () => {
   if (!tabsUrl.value) return;
 
-  try {
-    const response = await fetch(`http://192.168.1.90:5176/api/tabs/TabsUrl?url=${tabsUrl.value}`);
-
-    if (!response.ok) {
-      throw new Error('Failed to fetch tabs data');
-    }
-    tabsData.value = await response.json();
-  } catch (err: any) {
-    error.value = err.message;
+  const tab = tabsDataList.find((tab) => tab.url === tabsUrl.value);
+  if (tab) {
+    tabsData.value = tab;
+  } else {
+    error.value = "Tab not found.";
   }
 };
+
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -123,9 +122,11 @@ watch(() => route.params.tabs, (newTabs) => {
       class="hidden md:block sticky top-0 h-screen px-6 py-4 bg-cz-background-700 border-r border-cz-background-900 text-white"
       style="width: 160px; max-width: 160; overflow: hidden;">
       <ul class="space-y-1 h-full flex flex-col items-center">
-        <li><button @click="scrollToTop" class="font-bold text-xl my-2 text-center hover:text-cz-red-100">Top</button></li>
+        <li><button @click="scrollToTop" class="font-bold text-xl my-2 text-center hover:text-cz-red-100">Top</button>
+        </li>
         <li v-for="year in years" :key="year">
-          <button @click="scrollToYear(year)" class="font-bold text-xl my-2 text-center hover:text-cz-red-100">{{ year }}</button>
+          <button @click="scrollToYear(year)" class="font-bold text-xl my-2 text-center hover:text-cz-red-100">{{ year
+            }}</button>
         </li>
       </ul>
     </aside>
@@ -160,8 +161,12 @@ watch(() => route.params.tabs, (newTabs) => {
                   </p>
                   <p class="text-gray-300">{{ category.description }}</p>
                   <router-link v-if="category.url" :to="`/${tabsUrl}/${category.url}`"
-                    class="text-cz-red-400 hover:text-cz-red-200 md:mt-2 md:block">Find out more</router-link>
+                    class="text-cz-red-400 hover:text-cz-red-200 md:mt-2 md:block">
+                    Find out more
+                  </router-link>
                 </div>
+
+                <div vif="error" class="text-red-500">({ error })</div>
               </li>
             </ul>
           </div>

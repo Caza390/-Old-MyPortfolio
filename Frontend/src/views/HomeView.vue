@@ -32,7 +32,7 @@
                 class="w-10 h-10 lg:w-[52px] lg:h-[52px]">
             </a>
             <a href="https://www.linkedin.com/in/callum-carter-begbie-7854bb183/" target="_blank">
-              <img src="https://simpleicons.org/icons/linkedin.svg" alt="LinkedIn"
+              <img src="/src/assets/icons/linkedin.svg" alt="LinkedIn"
                 class="w-10 h-10 lg:w-[52px] lg:h-[52px]">
             </a>
             <a href="https://x.com/caza390" target="_blank">
