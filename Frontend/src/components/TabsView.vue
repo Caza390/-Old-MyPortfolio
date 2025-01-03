@@ -8,11 +8,11 @@ interface Category {
   id: string;
   title: string;
   description: string;
-  url: string;
+  url?: string;
   startDate: string;
   endDate?: string | null;
   tabs: string;
-  imagePath?: string;
+  image?: string;
 }
 
 interface TabsData {
@@ -32,46 +32,9 @@ const years = ref<number[]>([]);
 
 
 const fetchCategoriesData = () => {
-  if (!tabsUrl.value) {
-    error.value = "No valid URL provided.";
-    return;
-  }
-
-  try {
-    // Filter categories by the current tab
-    const filteredCategories = categoryDataList.filter(
-      (category) => category.tabs === tabsUrl.value
-    );
-
-    if (filteredCategories.length === 0) {
-      throw new Error("No categories found for the current tab.");
-    }
-
-    // Process and sort categories
-    categoriesData.value = filteredCategories
-      .map((category) => {
-        return {
-          ...category,
-          imagePath: category.image ? `/assets/images/${category.image}` : "",
-        };
-      })
-      .sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
-
-    // Extract unique years from categories
-    const uniqueYears = new Set<number>();
-    categoriesData.value.forEach((category) => {
-      const startYear = new Date(category.startDate).getFullYear();
-      uniqueYears.add(startYear);
-      if (category.endDate) {
-        const endYear = new Date(category.endDate).getFullYear();
-        uniqueYears.add(endYear);
-      }
-    });
-    years.value = Array.from(uniqueYears).sort((a, b) => b - a);
-  } catch (err: any) {
-    error.value = err.message;
-  }
+  categoriesData.value = categoryDataList; // Just use the provided list directly for now
 };
+
 
 const fetchTabsData = () => {
   if (!tabsUrl.value) return;
@@ -138,6 +101,20 @@ watch(() => route.params.tabs, (newTabs) => {
       </header>
 
       <main class="md:px-20">
+        <!-- Simple Category List -->
+        <div v-if="categoriesData.length > 0">
+          <ul class="space-y-4">
+            <li v-for="category in categoriesData" :key="category.id" class="bg-gray-800 p-4 rounded-lg">
+              <h3 class="text-white text-xl">{{ category.title }}</h3>
+              <p class="text-gray-400">{{ category.description }}</p>
+              <p class="text-gray-500 text-sm">{{ category.startDate }} <span v-if="category.endDate">- {{
+                  category.endDate }}</span></p>
+            </li>
+          </ul>
+        </div>
+      </main>
+
+      <!--   <main class="md:px-20">
         <div v-if="!loading && categoriesData.length > 0">
           <div v-for="year in years" :key="year" :id="'year-' + year" class="pt-4">
             <h2 class="text-2xl font-bold text-cz-red-50 my-8 mb-2">{{ year }}</h2>
@@ -171,7 +148,7 @@ watch(() => route.params.tabs, (newTabs) => {
             </ul>
           </div>
         </div>
-      </main>
+      </main>   -->
     </div>
   </body>
 
