@@ -142,7 +142,8 @@ onMounted(() => {
               <li v-for="category in entry.categories" :key="'category-' + category.id"
                 class="md:flex border border-cz-red-950 rounded-lg p-4 bg-cz-background-700">
                 <div v-if="category.image" class="md:w-1/4 aspect-ratio-box">
-                  <img :src="category.image" alt="Category Image" class="category-image rounded-lg" />
+                  <img :src="`/CategoryImages/${category.image}`" alt="Category Image"
+                    class="category-image rounded-lg" />
                 </div>
                 <div v-else
                   class="md:w-1/4 h-24 md:h-24 bg-cz-red-950 bg-opacity-50 md:flex md:items-center md:justify-center text-gray-400">

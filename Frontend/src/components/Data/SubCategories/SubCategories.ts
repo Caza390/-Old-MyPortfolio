@@ -7,7 +7,7 @@ export default [
       startDate: "2023-01-28",
       endDate: "2023-02-22",
       category: "decaf-mechanics",
-      image: "",
+      image: "DecafMechanics.png",
     },
     {
         id: "2",
@@ -17,7 +17,7 @@ export default [
         startDate: "2023-03-11",
         endDate: "2023-03-21",
         category: "portfolios",
-        image: "",
+        image: "OldPortfolio_v1.png",
       },
       {
         id: "3",
@@ -27,7 +27,7 @@ export default [
         startDate: "2023-07-19",
         endDate: "2023-08-27",
         category: "portfolios",
-        image: "",
+        image: "OldPortfolio_v2.png",
       },
       {
         id: "4",
@@ -37,7 +37,7 @@ export default [
         startDate: "2023-10-30",
         endDate: "",
         category: "portfolios",
-        image: "",
+        image: "OldPortfolio_v3.2.png",
       },
       {
         id: "5",
@@ -47,7 +47,7 @@ export default [
         startDate: "2023-12-19",
         endDate: "",
         category: "portfolios",
-        image: "",
+        image: "OldPortfolio_v3.3.png",
       },
       {
         id: "6",
@@ -57,7 +57,7 @@ export default [
         startDate: "2024-10-01",
         endDate: "",
         category: "portfolios",
-        image: "",
+        image: "OldPortfolio_v3.png",
       },
       {
         id: "7",
@@ -67,7 +67,7 @@ export default [
         startDate: "2024-10-09",
         endDate: "",
         category: "portfolios",
-        image: "",
+        image: "Portfolio_v4.png",
       },
       {
         id: "8",
@@ -77,7 +77,7 @@ export default [
         startDate: "",
         endDate: "",
         category: "slender-man",
-        image: "",
+        image: "SlenderMan.1.png",
       },
       {
         id: "9",
@@ -87,7 +87,7 @@ export default [
         startDate: "",
         endDate: "",
         category: "slender-man",
-        image: "",
+        image: "SlenderMan.2.png",
       },
       {
         id: "10",
@@ -97,7 +97,7 @@ export default [
         startDate: "",
         endDate: "",
         category: "slender-man",
-        image: "",
+        image: "SlenderMan.3.png",
       },
       {
         id: "11",
@@ -107,7 +107,7 @@ export default [
         startDate: "",
         endDate: "",
         category: "slender-man",
-        image: "",
+        image: "SlenderMan.4.png",
       },
       /*
       {

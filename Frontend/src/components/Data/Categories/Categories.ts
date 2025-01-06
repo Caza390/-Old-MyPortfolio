@@ -7,7 +7,7 @@ export default [
       endDate: "2023-02-22",
       url: "decaf-mechanics",
       tabs: "tech",
-      image: "",
+      image: "DecafMechanics.png",
     },
     {
         id: "2",
@@ -17,7 +17,7 @@ export default [
         endDate: "",
         url: "portfolios",
         tabs: "tech",
-        image: "",
+        image: "OldPortfolio.png",
       },
       {
         id: "3",
@@ -27,7 +27,7 @@ export default [
         endDate: "",
         url: "slender-man",
         tabs: "tech",
-        image: "",
+        image: "SlenderMan.png",
       },
       {
         id: "4",
@@ -37,7 +37,7 @@ export default [
         endDate: "",
         url: "",
         tabs: "models",
-        image: "",
+        image: "M1A1_Carbine_Unfinished.png",
       },
       {
         id: "5",
@@ -47,7 +47,7 @@ export default [
         endDate: "",
         url: "",
         tabs: "models",
-        image: "",
+        image: "AR_22_Unfinished.png",
       },
       {
         id: "6",
@@ -57,7 +57,7 @@ export default [
         endDate: "",
         url: "",
         tabs: "models",
-        image: "",
+        image: "Glock_19_LoPo.png",
       },
       {
         id: "7",
@@ -67,7 +67,7 @@ export default [
         endDate: "",
         url: "",
         tabs: "models",
-        image: "",
+        image: "Colt_1911.png",
       },
       {
         id: "8",
@@ -77,7 +77,7 @@ export default [
         endDate: "",
         url: "",
         tabs: "models",
-        image: "",
+        image: "Drawers.png",
       },
       {
         id: "9",
@@ -87,7 +87,7 @@ export default [
         endDate: "",
         url: "",
         tabs: "models",
-        image: "",
+        image: "BadgeStand.png",
       },
       {
         id: "10",
@@ -97,7 +97,7 @@ export default [
         endDate: "",
         url: "",
         tabs: "auto",
-        image: "",
+        image: "DashCamera.jpg",
       },
       {
         id: "11",
@@ -107,6 +107,6 @@ export default [
         endDate: "",
         url: "",
         tabs: "auto",
-        image: "",
+        image: "Radios.png",
       },
   ];

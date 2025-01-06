@@ -31,7 +31,6 @@ const categoryData = ref<CategoryData | null>(null);
 const uniqueHeadings = ref<string[]>([]);
 
 const fetchSubCategoriesData = () => {
-  console.log("Selected Category:", selectedCategory.value);
   subCategoriesData.value = subCategoryDataList.filter(
     (subCategory) => subCategory.category === selectedCategory.value
   );
@@ -118,16 +117,14 @@ const groupedSubcategories = computed(() => {
           <button @click="scrollToTop" class="font-bold text-xl my-2 text-center hover:text-cz-red-100">Top</button>
         </li>
         <li v-for="heading in uniqueHeadings" :key="heading">
-          <button @click="scrollToHeading(heading)" class="font-bold text-xl my-2 text-center hover:text-cz-red-100">{{ heading }}</button>
+          <button @click="scrollToHeading(heading)" class="font-bold text-xl my-2 text-center hover:text-cz-red-100">{{
+            heading }}</button>
         </li>
         <li>
-      <button
-        @click="goBack"
-        class="font-bold text-xl my-2 text-center hover:text-cz-red-100"
-      >
-        Back
-      </button>
-    </li>
+          <button @click="goBack" class="font-bold text-xl my-2 text-center hover:text-cz-red-100">
+            Back
+          </button>
+        </li>
       </ul>
     </aside>
 
@@ -148,9 +145,10 @@ const groupedSubcategories = computed(() => {
             <ul class="space-y-4">
               <li v-for="subcategory in group" :key="subcategory.id"
                 class="md:flex border border-cz-red-950 rounded-lg p-4 bg-cz-background-700">
-                
+
                 <div v-if="subcategory.image" class="md:w-1/4 aspect-ratio-box">
-                  <img :src="subcategory.image" alt="Subcategory Image" class="subcategory-image rounded-lg" />
+                  <img :src="`/SubCategoryImages/${subcategory.image}`" alt="SubCategory Images"
+                    class="subcategory-image rounded-lg" />
                 </div>
                 <div v-else
                   class="md:w-1/4 h-24 md:h-24 bg-cz-red-950 bg-opacity-50 md:flex md:items-center md:justify-center text-gray-400">
