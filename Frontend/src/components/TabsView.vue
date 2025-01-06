@@ -38,10 +38,10 @@ const fetchCategoriesData = () => {
 
 const filteredCategories = computed(() =>
   categoriesData.value.filter((category) => {
-    const categoryYear = new Date(category.startDate).getFullYear();
-    return category.tabs === selectedTab.value && (currentYear.value ? categoryYear === currentYear.value : true);
+    return category.tabs === selectedTab.value;
   })
 );
+
 
 const sortedGroupedCategories = computed(() => {
   const grouped: Record<number, Category[]> = {};
@@ -85,7 +85,6 @@ const scrollToTop = () => {
 };
 
 const scrollToYear = (year: number) => {
-  currentYear.value = year;
   const yearElement = document.getElementById(`year-${year}`);
   if (yearElement) {
     const offset = -25;
