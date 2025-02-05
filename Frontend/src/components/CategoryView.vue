@@ -131,7 +131,7 @@ const groupedSubcategories = computed(() => {
     <div class="md:w-5/6 p-4">
       <header v-if="categoryData" class="md:mx-40 text-center">
         <h1 class="text-white text-3xl md:text-5xl">{{ categoryData.title }}</h1>
-        <p class="text-gray-300 md:text-lg">{{ categoryData.description }}</p>
+        <p class="text-gray-300 md:mt-3 md:text-lg">{{ categoryData.description }}</p>
       </header>
 
       <main class="md:px-20">

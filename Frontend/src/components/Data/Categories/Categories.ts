@@ -109,4 +109,14 @@ export default [
         tabs: "auto",
         image: "Radios.png",
       },
+      {
+        id: "12",
+        title: "My Insignia",
+        description: "The Vauxhall Insignia is my car. Something I got for reliability, safety, comfort and transportation. While owning this vehicle there will be a few instances where I would be working on some projects for it like radios, reversing cameras, comfort lighting, etc. This is the history of these projects.",
+        startDate: "2024-12-25",
+        endDate: "",
+        url: "insignia",
+        tabs: "auto",
+        image: "Insignia.jpg",
+      }
   ];

@@ -129,7 +129,7 @@ onMounted(() => {
     <div class="md:w-5/6 p-4">
       <header v-if="tabsData" class="md:mx-40 text-center">
         <h1 class="text-white text-3xl md:text-5xl">{{ tabsData.title }}</h1>
-        <p class="text-gray-300 md:text-lg">{{ tabsData.subtitle }}</p>
+        <p class="text-gray-300 md:mt-3 md:text-lg">{{ tabsData.subtitle }}</p>
       </header>
 
       <main class="md:px-20">
