@@ -118,5 +118,15 @@ export default [
         url: "insignia",
         tabs: "auto",
         image: "Insignia.jpg",
+      },
+      {
+        id: "13",
+        title: "Halfords Auto Technician Guide",
+        description: "After recent changes to Halfords audio system and since there are always someone learning something new in the electrical side of Halfords, I wanted to make a guide sheet for my fellow collegues while also being a friendly reminder for myself. This site will be something that gets progressivly worked on but when I have a few dashcameras and radio parts added to this page, I will no longer add updates on my portfolio.",
+        startDate: "2025-02-12",
+        endDate: "",
+        url: "halfords-auto-tech-guide",
+        tabs: "tech",
+        image: "Halfords.jpg",
       }
   ];
