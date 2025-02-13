@@ -109,6 +109,26 @@ export default [
         category: "slender-man",
         image: "SlenderMan.4.png",
       },
+      {
+        id: "12",
+        heading: "Intro",
+        title: "The Home Page",
+        description: "This is the homepage of my Halfords Tech Guide site. This page will display categories like Dash Camera, Audio, Speakers and soon to be more. I aim to make this as clear and easy to access for everyone's need",
+        startDate: "2025-02-12",
+        endDate: "",
+        category: "halfords-auto-tech-guide",
+        image: "Halfords_1.jpg",
+      },
+      {
+        id: "13",
+        heading: "Makes and Models",
+        title: "Make Page",
+        description: "Starting off with a basic makes and models page, once you click on your category you will be given the option to select the make of the vehicle you need.",
+        startDate: "2025-02-13",
+        endDate: "",
+        category: "halfords-auto-tech-guide",
+        image: "Halfords_2.jpg",
+      },
       /*
       {
         id: "0",
