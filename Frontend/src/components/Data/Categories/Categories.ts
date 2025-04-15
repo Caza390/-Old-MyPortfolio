@@ -121,11 +121,11 @@ export default [
       },
       {
         id: "13",
-        title: "Halfords Auto Technician Guide",
-        description: "After recent changes to Halfords audio system and since there are always someone learning something new in the electrical side of Halfords, I wanted to make a guide sheet for my fellow collegues while also being a friendly reminder for myself. This site will be something that gets progressivly worked on but when I have a few dashcameras and radio parts added to this page, I will no longer add updates on my portfolio.",
+        title: "Halfords Life Quality System",
+        description: "After working at Halfords, I noticed a few things that could be improved to help make a better way of life for the staff there. One system that started this whole project off is relating to my job. Since my job is somewhat complicated with a lot of information, it is hard to retain, or answer customers for their specific questions. Next was the issue of collegues not knowing how to order parts or which parts are for what camera and how to check. Lastly is the problem of collegues struggling to find the right approach on installing dash cameras in cars and my experience of having to fix problems left by other stores or mobile services. The second project with a better life quality for staff at Halfords is the warrenty tools. We use a booklet which contains a lot of small numbers but no detailed images or description to the tools. On the computer system the problem is similar and not so helpful. This is where my system comes in.",
         startDate: "2025-02-12",
         endDate: "",
-        url: "halfords-auto-tech-guide",
+        url: "halfords-life-quality",
         tabs: "tech",
         image: "Halfords.jpg",
       }
