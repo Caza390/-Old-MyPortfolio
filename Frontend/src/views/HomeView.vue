@@ -10,14 +10,16 @@
       </div>
       <div>
         <h1 class="text-cz-red-50 text-3xl font-bold">Hi, I'm Callum Carter-Begbie</h1>
-        <p class="text-white text-xl my-5">I'm passionate about technology and creative problem-solving, with hands-on
-          experience in automotive projects like painting and custom installations, as well as 3D modeling.
+        <p class="text-white text-xl my-5">
+          I'm passionate about technology, automotive customisation and creative
+          problem-solving. I enjoy hands-on projects where I can develop new skills and see the results of my work, from
+          vehicle electrical installations and bodywork to software development and 3D modelling.
         </p>
         <p class="text-white text-xl my-5">
-          I'm currently pursuing a career in software
-          engineering and am open to opportunities across various sectors, including automotive, defense, and beyond.
-          I'm eager to apply my skills in software development to real-world challenges and continue learning along the
-          way.
+          I'm currently working as a trainee auto electrician, gaining practical experience in vehicle electronics,
+          lighting and custom installations. I'm particularly interested in exploring more of the automotive
+          customisation industry, while continuing to develop my knowledge of technology, software and other creative
+          fields.
         </p>
 
         <div class="flex items-center space-x-5 lg:space-x-10 mt-10">
@@ -32,8 +34,7 @@
                 class="w-10 h-10 lg:w-[52px] lg:h-[52px]">
             </a>
             <a href="https://www.linkedin.com/in/callum-carter-begbie-7854bb183/" target="_blank">
-              <img src="/src/assets/icons/linkedin.svg" alt="LinkedIn"
-                class="w-10 h-10 lg:w-[52px] lg:h-[52px]">
+              <img src="/src/assets/icons/linkedin.svg" alt="LinkedIn" class="w-10 h-10 lg:w-[52px] lg:h-[52px]">
             </a>
             <a href="https://x.com/caza390" target="_blank">
               <img src="https://simpleicons.org/icons/x.svg" alt="X" class="w-10 h-10 lg:w-[52px] lg:h-[52px]">
